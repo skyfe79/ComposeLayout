@@ -18,7 +18,7 @@ public struct VGroup: Group {
     public var width: NSCollectionLayoutDimension = .fractionalWidth(1.0)
     public var height: NSCollectionLayoutDimension = .fractionalHeight(1.0)
     public var supplementaryItems: [SupplementaryItem] = []
-    public var contentInsets: NSDirectionalEdgeInsets = .zero
+    public var contentInsets: NSDirectionalEdgeInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
     public var edgeSpacing: NSCollectionLayoutEdgeSpacing?
     public var interItemSpacing: NSCollectionLayoutSpacing?
     

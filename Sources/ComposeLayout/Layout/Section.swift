@@ -25,7 +25,7 @@ public struct Section: Hashable {
     
     private var id: AnyHashable
     public var rootGroup: NSCollectionLayoutGroupConvertible
-    private var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior?
+    private var orthogonalScrollingBehavior: PlatformCollectionLayoutSectionOrthogonalScrollingBehavior?
     private var interGroupSpacing: CGFloat = 0.0
     private var contentInsets: NSDirectionalEdgeInsets?
     private var contentInsetsReference: Any?
@@ -52,18 +52,22 @@ extension Section: NSCollectionLayoutSectionConvertible, NSCollectionLayoutSecti
         if let contentInsets {
             section.contentInsets = contentInsets
         }
-        if #available(iOS 14.0, *), let contentInsetsReference = contentInsetsReference as? UIContentInsetsReference {
-            section.contentInsetsReference = contentInsetsReference
-        }
-        if #available(iOS 16.0, *), let supplementaryContentInsetsReference = supplementaryContentInsetsReference as? UIContentInsetsReference {
-            section.supplementaryContentInsetsReference = supplementaryContentInsetsReference
-        }
         if let boundarySupplementaryItems {
             section.boundarySupplementaryItems = boundarySupplementaryItems.compactMap { $0.toNSCollectionLayoutBoundarySupplementaryItem() }
         }
         if let decorationItems {
             section.decorationItems = decorationItems.compactMap { $0.toNSCollectionLayoutDecorationItem() }
         }
+        
+        #if os(iOS)
+            if #available(iOS 14.0, *), let contentInsetsReference = contentInsetsReference as? UIContentInsetsReference {
+                section.contentInsetsReference = contentInsetsReference
+            }
+            if #available(iOS 16.0, *), let supplementaryContentInsetsReference = supplementaryContentInsetsReference as? UIContentInsetsReference {
+                section.supplementaryContentInsetsReference = supplementaryContentInsetsReference
+            }
+        #endif
+        
         return section
     }
     
@@ -75,7 +79,7 @@ extension Section: NSCollectionLayoutSectionConvertible, NSCollectionLayoutSecti
 
 // MARK: - Specifying scrolling behavior
 extension Section {
-    public func orthogonalScrollingBehavior(_ value: UICollectionLayoutSectionOrthogonalScrollingBehavior) -> Section {
+    public func orthogonalScrollingBehavior(_ value: PlatformCollectionLayoutSectionOrthogonalScrollingBehavior) -> Section {
         return mutable(self) { $0.orthogonalScrollingBehavior = value }
     }
 }
@@ -101,7 +105,8 @@ extension Section {
             $0.contentInsets = newInsets
         }
     }
-    
+
+#if os(iOS)
     @available(iOS 14.0, *)
     public func contentInsets(reference: UIContentInsetsReference) -> Section {
         return mutable(self) { $0.contentInsetsReference = reference }
@@ -111,6 +116,7 @@ extension Section {
     public func supplementaryContentInsets(reference: UIContentInsetsReference) -> Section {
         return mutable(self) { $0.supplementaryContentInsetsReference = reference }
     }
+#endif
 }
 
 // MARK: - Configuring additional views

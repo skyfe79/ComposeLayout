@@ -9,7 +9,7 @@ import AppKit
 public struct ComposeLayout {
     @SectionBuilder
     private var layoutBuilder: (_ environment: NSCollectionLayoutEnvironment) -> ComposeLayoutModel
-    private var configuration: UICollectionViewCompositionalLayoutConfiguration?
+    private var configuration: PlatformCompositionalLayoutConfiguration?
     private var decorationViewClasses: [String: AnyClass] = [:]
     
     public init(@ComposeLayoutBuilder layout: @escaping (_ environment: NSCollectionLayoutEnvironment) -> ComposeLayoutModel) {
