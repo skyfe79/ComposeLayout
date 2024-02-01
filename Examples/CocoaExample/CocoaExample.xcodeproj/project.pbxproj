@@ -35,6 +35,8 @@
 		035549782B6BCA9A00A08D0D /* TitleSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035549772B6BCA9A00A08D0D /* TitleSupplementaryView.xib */; };
 		0355497A2B6BE61B00A08D0D /* NestedGroups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549792B6BE61B00A08D0D /* NestedGroups.storyboard */; };
 		0355497D2B6BE67400A08D0D /* NestedGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355497C2B6BE67400A08D0D /* NestedGroupsViewController.swift */; };
+		0355497F2B6BE8A900A08D0D /* OrthogonalScrolling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0355497E2B6BE8A900A08D0D /* OrthogonalScrolling.storyboard */; };
+		035549822B6BE91400A08D0D /* OrthogonalScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549812B6BE91400A08D0D /* OrthogonalScrollingViewController.swift */; };
 		0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ED002B6A755200411E02 /* AppDelegate.swift */; };
 		0384ED052B6A755300411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED042B6A755300411E02 /* Assets.xcassets */; };
 		0384ED082B6A755300411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED062B6A755300411E02 /* Main.storyboard */; };
@@ -70,6 +72,8 @@
 		035549772B6BCA9A00A08D0D /* TitleSupplementaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSupplementaryView.xib; sourceTree = "<group>"; };
 		035549792B6BE61B00A08D0D /* NestedGroups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NestedGroups.storyboard; sourceTree = "<group>"; };
 		0355497C2B6BE67400A08D0D /* NestedGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedGroupsViewController.swift; sourceTree = "<group>"; };
+		0355497E2B6BE8A900A08D0D /* OrthogonalScrolling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrthogonalScrolling.storyboard; sourceTree = "<group>"; };
+		035549812B6BE91400A08D0D /* OrthogonalScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalScrollingViewController.swift; sourceTree = "<group>"; };
 		0384ECFD2B6A755200411E02 /* CocoaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ED002B6A755200411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ED042B6A755300411E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				0355496A2B6BC43E00A08D0D /* ItemBadgeSupplementary.storyboard */,
 				035549702B6BC98000A08D0D /* SectionHeaderFooter.storyboard */,
 				035549792B6BE61B00A08D0D /* NestedGroups.storyboard */,
+				0355497E2B6BE8A900A08D0D /* OrthogonalScrolling.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -215,6 +220,14 @@
 			path = NestedGroups;
 			sourceTree = "<group>";
 		};
+		035549802B6BE8FF00A08D0D /* OrthogonalScrolling */ = {
+			isa = PBXGroup;
+			children = (
+				035549812B6BE91400A08D0D /* OrthogonalScrollingViewController.swift */,
+			);
+			path = OrthogonalScrolling;
+			sourceTree = "<group>";
+		};
 		0384ECF42B6A755200411E02 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +261,7 @@
 				035549692B6BC42B00A08D0D /* ItemBadgeSupplementary */,
 				035549722B6BC9B300A08D0D /* SectionHeaderFooter */,
 				0355497B2B6BE64300A08D0D /* NestedGroups */,
+				035549802B6BE8FF00A08D0D /* OrthogonalScrolling */,
 				0384ED002B6A755200411E02 /* AppDelegate.swift */,
 				0384ED042B6A755300411E02 /* Assets.xcassets */,
 				0384ED062B6A755300411E02 /* Main.storyboard */,
@@ -334,6 +348,7 @@
 				0355496F2B6BC6F100A08D0D /* BadgeSupplementaryView.xib in Resources */,
 				035549712B6BC98000A08D0D /* SectionHeaderFooter.storyboard in Resources */,
 				0355495B2B6B9FF000A08D0D /* TwoColumns.storyboard in Resources */,
+				0355497F2B6BE8A900A08D0D /* OrthogonalScrolling.storyboard in Resources */,
 				035549572B6B9D5800A08D0D /* Grid.storyboard in Resources */,
 				035549532B6B9C8700A08D0D /* InsetItemsGrid.storyboard in Resources */,
 			);
@@ -357,6 +372,7 @@
 				0355495E2B6BA03800A08D0D /* TwoColumnsGridViewController.swift in Sources */,
 				035549502B6B9BF000A08D0D /* InsetItemsGridViewController.swift in Sources */,
 				035549462B6B995700A08D0D /* GridViewController.swift in Sources */,
+				035549822B6BE91400A08D0D /* OrthogonalScrollingViewController.swift in Sources */,
 				035549382B6B934F00A08D0D /* DevViewController.swift in Sources */,
 				0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */,
 				0355493C2B6B93C300A08D0D /* ListViewController.swift in Sources */,

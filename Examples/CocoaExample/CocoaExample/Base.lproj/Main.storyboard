@@ -821,6 +821,17 @@
                                     <segue destination="d9p-Tm-smx" kind="show" id="ZN3-az-ne4"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUW-KY-mar">
+                                <rect key="frame" x="149" y="13" width="159" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Orthogonal Scrolling" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ybn-yX-06Z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Whv-X0-fyT" kind="show" id="bKD-6r-COi"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -875,6 +886,14 @@
                 <customObject id="Ara-xJ-rpW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="534" y="939"/>
+        </scene>
+        <!--OrthogonalScrolling-->
+        <scene sceneID="uiP-mf-QGS">
+            <objects>
+                <controllerPlaceholder storyboardName="OrthogonalScrolling" id="Whv-X0-fyT" sceneMemberID="viewController"/>
+                <customObject id="4gN-83-Y20" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="1002"/>
         </scene>
         <!--InsetItemsGrid-->
         <scene sceneID="97p-sa-bNu">
