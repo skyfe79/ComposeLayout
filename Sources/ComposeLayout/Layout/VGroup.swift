@@ -23,7 +23,7 @@ public struct VGroup: Group {
     public var edgeSpacing: NSCollectionLayoutEdgeSpacing?
     public var interItemSpacing: NSCollectionLayoutSpacing?
     
-    public init(repeatItems: Int, items: () -> [NSCollectionLayoutItem]) {
+    public init(repeatItems: Int, @GroupBuilder items: () -> [NSCollectionLayoutItem]) {
         self.repeatItemsCount = repeatItems
         self.subitems = items()
     }
