@@ -765,6 +765,17 @@
                                     <segue destination="3rd-OK-Igy" kind="show" id="yq6-nc-S53"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAD-bI-5R3">
+                                <rect key="frame" x="23" y="125" width="137" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Distinct Sections" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TjC-JB-bDa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="phF-yJ-hHW" kind="show" id="R6Q-dC-psP"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -778,7 +789,15 @@
                 <controllerPlaceholder storyboardName="TwoColumns" id="3rd-OK-Igy" sceneMemberID="viewController"/>
                 <customObject id="Sp3-cZ-WBt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="386" y="1048"/>
+            <point key="canvasLocation" x="506" y="578"/>
+        </scene>
+        <!--DistinctSections-->
+        <scene sceneID="FeU-bG-e3m">
+            <objects>
+                <controllerPlaceholder storyboardName="DistinctSections" id="phF-yJ-hHW" sceneMemberID="viewController"/>
+                <customObject id="c5x-N5-u6y" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="1055"/>
         </scene>
         <!--InsetItemsGrid-->
         <scene sceneID="97p-sa-bNu">
@@ -786,7 +805,7 @@
                 <controllerPlaceholder storyboardIdentifier="inset-items-grid" storyboardName="InsetItemsGrid" id="s5u-Fx-YTB" sceneMemberID="viewController"/>
                 <customObject id="SiU-4j-Nqe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="1184"/>
+            <point key="canvasLocation" x="523" y="637"/>
         </scene>
         <!--Dev-->
         <scene sceneID="Pw0-Wz-17k">
