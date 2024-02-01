@@ -54,7 +54,7 @@ class ViewController: NSViewController {
     
     func testSection(environment: NSCollectionLayoutEnvironment) -> Section {
         Section(id: UUID()) {
-            HGroup {
+            HGroup(repeatItems: 2) {
                 Item()
                     .width(.fractionalWidth(0.5))
                     .height(.fractionalHeight(1.0))
@@ -70,21 +70,18 @@ class ViewController: NSViewController {
                 Item()
                     .width(.fractionalWidth(0.5))
                     .height(.fractionalHeight(1.0))
-                    .contentInsets(leading: 1, top: 1, trailing: 1, bottom: 1)
-                VGroup {
+                    .contentInsets(leading: 1, top: 0, trailing: 1, bottom: 0)
+                VGroup(repeatItems: 2) {
                     Item()
                         .width(.fractionalWidth(1.0))
                         .height(.fractionalHeight(0.5))
-                        .contentInsets(leading: 1, top: 1, trailing: 1, bottom: 1)
-                    Item()
-                        .width(.fractionalWidth(1.0))
-                        .height(.fractionalHeight(0.5))
-                        .contentInsets(leading: 1, top: 1, trailing: 1, bottom: 1)
                 }
+                .interItemSpacing(.fixed(1.0))
                 .width(.fractionalWidth(0.5))
                 .height(.fractionalHeight(1.0))
                 
             }
+            .contentInsets(bottom: 1)
             .width(.fractionalWidth(1.0))
             .height(.absolute(300))
         }
@@ -101,21 +98,16 @@ class ViewController: NSViewController {
                             .width(.absolute(50))
                             .height(.absolute(50))
                             .containerAnchor(edges: [.top, .leading])
-                            
                     }
                     .contentInsets(leading: 1, top: 1, trailing: 1, bottom: 1)
-                VGroup {
-                    for _ in 0..<10 {
-                        Item()
-                            .width(.fractionalWidth(1.0))
-                            .height(.fractionalHeight(0.1))
-                            .contentInsets(leading: 1, top: 1, trailing: 1, bottom: 1)
-                    }
+                VGroup(repeatItems: 10) {
+                    Item()
+                        .width(.fractionalWidth(1.0))
+                        .height(.fractionalHeight(0.1))
                 }
-                
+                .interItemSpacing(.fixed(1))
                 .width(.fractionalWidth(0.5))
-                .height(.fractionalHeight(1.0))
-                
+                .height(.fractionalHeight(1.0))   
             }
             .height(.absolute(300))
             

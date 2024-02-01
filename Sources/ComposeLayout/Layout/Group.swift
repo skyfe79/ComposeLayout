@@ -14,11 +14,14 @@ import AppKit
 #endif
 
 public protocol ComposeLayoutGroup: ComposeLayoutItem, NSCollectionLayoutItemsConvertible, NSCollectionLayoutGroupConvertible {
+    var repeatItemsCount: Int { get }
     var subitems: [NSCollectionLayoutItem] { get }
     var interItemSpacing: NSCollectionLayoutSpacing? { get set }
 }
 
 public protocol Group: ComposeLayoutGroup {
+    init(@GroupBuilder items: () -> [NSCollectionLayoutItem])
+    init(repeatItems: Int, @GroupBuilder items: () -> [NSCollectionLayoutItem])
 }
 
 // MARK: - NSCollectionLayoutItemsConvertible
