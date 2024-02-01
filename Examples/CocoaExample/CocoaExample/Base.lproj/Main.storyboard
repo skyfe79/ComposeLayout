@@ -799,6 +799,17 @@
                                     <segue destination="moM-dh-exV" kind="show" id="dhY-WJ-SQ1"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3T-9h-DOl">
+                                <rect key="frame" x="149" y="60" width="184" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Section Headers Footers" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KQH-Wv-2bA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="tzk-ki-nHH" kind="show" id="pJz-pF-vtD"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -837,6 +848,14 @@
                 <customObject id="BLv-QZ-Www" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="546" y="820"/>
+        </scene>
+        <!--SectionHeaderFooter-->
+        <scene sceneID="JNE-JN-44C">
+            <objects>
+                <controllerPlaceholder storyboardName="SectionHeaderFooter" id="tzk-ki-nHH" sceneMemberID="viewController"/>
+                <customObject id="vBR-v8-nH1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="878"/>
         </scene>
         <!--InsetItemsGrid-->
         <scene sceneID="97p-sa-bNu">
