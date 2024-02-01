@@ -690,12 +690,13 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="480" height="320"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="nLv-JH-xXJ" kind="relationship" relationship="window.shadowedContentViewController" id="Jwz-1E-7TI"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -703,48 +704,228 @@
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <scene sceneID="zba-oB-UJT">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="CocoaExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="nLv-JH-xXJ" sceneMemberID="viewController">
+                    <view key="view" id="aeW-hM-zHn">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="302"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOF-bf-LrD">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <clipView key="contentView" id="cn1-15-SC9">
-                                    <rect key="frame" x="1" y="1" width="478" height="268"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <collectionView id="evZ-bm-66C">
-                                            <rect key="frame" x="0.0" y="0.0" width="478" height="158"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="heo-xw-gub">
-                                                <size key="itemSize" width="50" height="50"/>
-                                            </collectionViewFlowLayout>
-                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </collectionView>
-                                    </subviews>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="lRk-SG-SFQ">
-                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="PBk-pR-HLw">
-                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wQe-Xg-86K">
+                                <rect key="frame" x="212" y="255" width="58" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Dev" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qQx-au-1mA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="8Gw-GM-2mO" kind="show" id="Ytj-wK-IJx"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="84z-Ra-1gQ">
+                                <rect key="frame" x="23" y="196" width="56" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="List" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RDW-vg-qxc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="oOP-Qt-S0A" kind="show" id="cgI-6e-tOT"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhO-iH-Vxt">
+                                <rect key="frame" x="101" y="196" width="60" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Grid" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DJY-Cp-Lb5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Qf8-Nc-aLK" kind="show" id="Hpt-F5-36W"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4p-eK-EUV">
+                                <rect key="frame" x="168" y="196" width="130" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Inset Items Grid" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="frl-Jd-jaj">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="s5u-Fx-YTB" kind="show" id="YoX-yl-lhJ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPg-aL-kzP">
+                                <rect key="frame" x="296" y="196" width="137" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Two Colums Grid" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xHX-YM-tNh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="3rd-OK-Igy" kind="show" id="yq6-nc-S53"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAD-bI-5R3">
+                                <rect key="frame" x="23" y="125" width="137" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Distinct Sections" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TjC-JB-bDa">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="phF-yJ-hHW" kind="show" id="R6Q-dC-psP"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s8k-ZN-vdv">
+                                <rect key="frame" x="168" y="125" width="144" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Adaptive Sections" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="v08-ak-xsQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="ZzN-ki-lL7" kind="show" id="ayi-Cz-PIW"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evh-M3-y6V">
+                                <rect key="frame" x="23" y="60" width="110" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Item Badges" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iuR-fQ-fIh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="moM-dh-exV" kind="show" id="dhY-WJ-SQ1"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3T-9h-DOl">
+                                <rect key="frame" x="149" y="60" width="184" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Section Headers Footers" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KQH-Wv-2bA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="tzk-ki-nHH" kind="show" id="pJz-pF-vtD"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8LR-a4-dqF">
+                                <rect key="frame" x="23" y="13" width="125" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Nested Groups" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pBD-Mq-S9t">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="d9p-Tm-smx" kind="show" id="ZN3-az-ne4"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUW-KY-mar">
+                                <rect key="frame" x="149" y="13" width="159" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Orthogonal Scrolling" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ybn-yX-06Z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="Whv-X0-fyT" kind="show" id="bKD-6r-COi"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="evZ-bm-66C" id="NOl-XW-JqB"/>
-                    </connections>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Hgm-ZV-61K" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="790"/>
+        </scene>
+        <!--TwoColumns-->
+        <scene sceneID="7Yn-Vt-g80">
+            <objects>
+                <controllerPlaceholder storyboardName="TwoColumns" id="3rd-OK-Igy" sceneMemberID="viewController"/>
+                <customObject id="Sp3-cZ-WBt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="578"/>
+        </scene>
+        <!--DistinctSections-->
+        <scene sceneID="FeU-bG-e3m">
+            <objects>
+                <controllerPlaceholder storyboardName="DistinctSections" id="phF-yJ-hHW" sceneMemberID="viewController"/>
+                <customObject id="c5x-N5-u6y" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="697"/>
+        </scene>
+        <!--AdaptiveSections-->
+        <scene sceneID="X9J-Dx-Rql">
+            <objects>
+                <controllerPlaceholder storyboardName="AdaptiveSections" id="ZzN-ki-lL7" sceneMemberID="viewController"/>
+                <customObject id="S4s-ug-EOu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="758"/>
+        </scene>
+        <!--ItemBadgeSupplementary-->
+        <scene sceneID="nU2-IQ-a5d">
+            <objects>
+                <controllerPlaceholder storyboardName="ItemBadgeSupplementary" id="moM-dh-exV" sceneMemberID="viewController"/>
+                <customObject id="BLv-QZ-Www" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="820"/>
+        </scene>
+        <!--SectionHeaderFooter-->
+        <scene sceneID="JNE-JN-44C">
+            <objects>
+                <controllerPlaceholder storyboardName="SectionHeaderFooter" id="tzk-ki-nHH" sceneMemberID="viewController"/>
+                <customObject id="vBR-v8-nH1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="878"/>
+        </scene>
+        <!--NestedGroups-->
+        <scene sceneID="tIL-7f-yAq">
+            <objects>
+                <controllerPlaceholder storyboardName="NestedGroups" id="d9p-Tm-smx" sceneMemberID="viewController"/>
+                <customObject id="Ara-xJ-rpW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="939"/>
+        </scene>
+        <!--OrthogonalScrolling-->
+        <scene sceneID="uiP-mf-QGS">
+            <objects>
+                <controllerPlaceholder storyboardName="OrthogonalScrolling" id="Whv-X0-fyT" sceneMemberID="viewController"/>
+                <customObject id="4gN-83-Y20" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="1002"/>
+        </scene>
+        <!--InsetItemsGrid-->
+        <scene sceneID="97p-sa-bNu">
+            <objects>
+                <controllerPlaceholder storyboardIdentifier="inset-items-grid" storyboardName="InsetItemsGrid" id="s5u-Fx-YTB" sceneMemberID="viewController"/>
+                <customObject id="SiU-4j-Nqe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="637"/>
+        </scene>
+        <!--Dev-->
+        <scene sceneID="Pw0-Wz-17k">
+            <objects>
+                <controllerPlaceholder storyboardName="Dev" id="8Gw-GM-2mO" sceneMemberID="viewController"/>
+                <customObject id="uHk-ZQ-VWg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="369"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="cjs-BR-3Yb">
+            <objects>
+                <controllerPlaceholder storyboardName="List" id="oOP-Qt-S0A" sceneMemberID="viewController"/>
+                <customObject id="UgY-qZ-2U2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="442"/>
+        </scene>
+        <!--Grid-->
+        <scene sceneID="4dT-HP-Rah">
+            <objects>
+                <controllerPlaceholder storyboardName="Grid" id="Qf8-Nc-aLK" sceneMemberID="viewController"/>
+                <customObject id="eP0-Ff-zC9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="511"/>
         </scene>
     </scenes>
 </document>

@@ -50,9 +50,9 @@ class MyBackgroundView3: NSView {
     }
 }
 
-class ViewController: NSViewController {
+class DevViewController: NSViewController {
     
-    func testSection(environment: NSCollectionLayoutEnvironment) -> Section {
+    func firstSection(environment: NSCollectionLayoutEnvironment) -> Section {
         Section(id: UUID()) {
             HGroup(repeatItems: 2) {
                 Item()
@@ -64,7 +64,7 @@ class ViewController: NSViewController {
         .orthogonalScrollingBehavior(.continuous)
     }
     
-    func firstSection(environment: NSCollectionLayoutEnvironment) -> Section {
+    func secondSection(environment: NSCollectionLayoutEnvironment) -> Section {
         Section(id: UUID()) {
             HGroup {
                 Item()
@@ -87,7 +87,7 @@ class ViewController: NSViewController {
         }
     }
     
-    func secondSection(environment: NSCollectionLayoutEnvironment) -> Section {
+    func thirdSection(environment: NSCollectionLayoutEnvironment) -> Section {
         Section(id: UUID()) {
             HGroup {
                 Item()
@@ -129,9 +129,9 @@ class ViewController: NSViewController {
         let config = NSCollectionViewCompositionalLayoutConfiguration()
         config.scrollDirection = .vertical
         return ComposeLayout { environment in
-            self.testSection(environment: environment)
             self.firstSection(environment: environment)
             self.secondSection(environment: environment)
+            self.thirdSection(environment: environment)
         }
         .register(MyBackgroundView.self, forDecorationViewOfKind: "blue-background")
         .configuration(config)
@@ -151,7 +151,7 @@ class ViewController: NSViewController {
     }
 }
 
-extension ViewController: NSCollectionViewDataSource {
+extension DevViewController: NSCollectionViewDataSource {
     func numberOfSections(in collectionView: NSCollectionView) -> Int {
         return 3
     }

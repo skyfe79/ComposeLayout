@@ -34,7 +34,12 @@ extension ComposeLayout {
     public func build() -> PlatformCompositionalLayout {
         let layout = PlatformCompositionalLayout { index, environment in
             let composeLayoutModel = layoutBuilder(environment)
-            return composeLayoutModel.sections[index].toNSCollectionLayoutSection()
+            return if index < composeLayoutModel.sections.count {
+                composeLayoutModel.sections[index].toNSCollectionLayoutSection()
+            } else {
+                composeLayoutModel.sections.last?.toNSCollectionLayoutSection()
+            }
+                
         }
 
         decorationViewClasses.forEach { (key: String, value: AnyClass) in
