@@ -11,6 +11,15 @@
 		0355493C2B6B93C300A08D0D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355493B2B6B93C300A08D0D /* ListViewController.swift */; };
 		0355493E2B6B94C200A08D0D /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0355493D2B6B94C200A08D0D /* ListItem.xib */; };
 		035549432B6B955A00A08D0D /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549422B6B955A00A08D0D /* ListItem.swift */; };
+		035549462B6B995700A08D0D /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549452B6B995700A08D0D /* GridViewController.swift */; };
+		035549482B6B9A7800A08D0D /* TextItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035549472B6B9A7800A08D0D /* TextItem.xib */; };
+		0355494A2B6B9A8E00A08D0D /* TextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549492B6B9A8E00A08D0D /* TextItem.swift */; };
+		0355494D2B6B9ACD00A08D0D /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355494C2B6B9ACD00A08D0D /* NSColor+Extension.swift */; };
+		035549502B6B9BF000A08D0D /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355494F2B6B9BF000A08D0D /* InsetItemsGridViewController.swift */; };
+		035549532B6B9C8700A08D0D /* InsetItemsGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549522B6B9C8700A08D0D /* InsetItemsGrid.storyboard */; };
+		035549552B6B9D4E00A08D0D /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549542B6B9D4E00A08D0D /* List.storyboard */; };
+		035549572B6B9D5800A08D0D /* Grid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549562B6B9D5800A08D0D /* Grid.storyboard */; };
+		035549592B6B9D7200A08D0D /* Dev.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549582B6B9D7200A08D0D /* Dev.storyboard */; };
 		0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ED002B6A755200411E02 /* AppDelegate.swift */; };
 		0384ED052B6A755300411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED042B6A755300411E02 /* Assets.xcassets */; };
 		0384ED082B6A755300411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED062B6A755300411E02 /* Main.storyboard */; };
@@ -22,6 +31,15 @@
 		0355493B2B6B93C300A08D0D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		0355493D2B6B94C200A08D0D /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
 		035549422B6B955A00A08D0D /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		035549452B6B995700A08D0D /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		035549472B6B9A7800A08D0D /* TextItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextItem.xib; sourceTree = "<group>"; };
+		035549492B6B9A8E00A08D0D /* TextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextItem.swift; sourceTree = "<group>"; };
+		0355494C2B6B9ACD00A08D0D /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
+		0355494F2B6B9BF000A08D0D /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
+		035549522B6B9C8700A08D0D /* InsetItemsGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsetItemsGrid.storyboard; sourceTree = "<group>"; };
+		035549542B6B9D4E00A08D0D /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		035549562B6B9D5800A08D0D /* Grid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Grid.storyboard; sourceTree = "<group>"; };
+		035549582B6B9D7200A08D0D /* Dev.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dev.storyboard; sourceTree = "<group>"; };
 		0384ECFD2B6A755200411E02 /* CocoaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ED002B6A755200411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ED042B6A755300411E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +78,7 @@
 		0355493F2B6B951200A08D0D /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				035549472B6B9A7800A08D0D /* TextItem.xib */,
 				0355493D2B6B94C200A08D0D /* ListItem.xib */,
 			);
 			path = Xibs;
@@ -69,8 +88,44 @@
 			isa = PBXGroup;
 			children = (
 				035549422B6B955A00A08D0D /* ListItem.swift */,
+				035549492B6B9A8E00A08D0D /* TextItem.swift */,
 			);
 			path = Items;
+			sourceTree = "<group>";
+		};
+		035549442B6B993B00A08D0D /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				035549452B6B995700A08D0D /* GridViewController.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		0355494B2B6B9AB800A08D0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0355494C2B6B9ACD00A08D0D /* NSColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0355494E2B6B9BC200A08D0D /* InsetItemsGrid */ = {
+			isa = PBXGroup;
+			children = (
+				0355494F2B6B9BF000A08D0D /* InsetItemsGridViewController.swift */,
+			);
+			path = InsetItemsGrid;
+			sourceTree = "<group>";
+		};
+		035549512B6B9C7500A08D0D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				035549582B6B9D7200A08D0D /* Dev.storyboard */,
+				035549542B6B9D4E00A08D0D /* List.storyboard */,
+				035549562B6B9D5800A08D0D /* Grid.storyboard */,
+				035549522B6B9C8700A08D0D /* InsetItemsGrid.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		0384ECF42B6A755200411E02 = {
@@ -92,10 +147,14 @@
 		0384ECFF2B6A755200411E02 /* CocoaExample */ = {
 			isa = PBXGroup;
 			children = (
+				035549512B6B9C7500A08D0D /* Storyboards */,
+				0355494B2B6B9AB800A08D0D /* Extensions */,
 				0355493F2B6B951200A08D0D /* Xibs */,
 				035549412B6B952600A08D0D /* Items */,
 				0355493A2B6B93AC00A08D0D /* Dev */,
 				035549392B6B939600A08D0D /* List */,
+				035549442B6B993B00A08D0D /* Grid */,
+				0355494E2B6B9BC200A08D0D /* InsetItemsGrid */,
 				0384ED002B6A755200411E02 /* AppDelegate.swift */,
 				0384ED042B6A755300411E02 /* Assets.xcassets */,
 				0384ED062B6A755300411E02 /* Main.storyboard */,
@@ -169,8 +228,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0355493E2B6B94C200A08D0D /* ListItem.xib in Resources */,
+				035549482B6B9A7800A08D0D /* TextItem.xib in Resources */,
 				0384ED052B6A755300411E02 /* Assets.xcassets in Resources */,
 				0384ED082B6A755300411E02 /* Main.storyboard in Resources */,
+				035549592B6B9D7200A08D0D /* Dev.storyboard in Resources */,
+				035549552B6B9D4E00A08D0D /* List.storyboard in Resources */,
+				035549572B6B9D5800A08D0D /* Grid.storyboard in Resources */,
+				035549532B6B9C8700A08D0D /* InsetItemsGrid.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				035549432B6B955A00A08D0D /* ListItem.swift in Sources */,
+				0355494A2B6B9A8E00A08D0D /* TextItem.swift in Sources */,
+				0355494D2B6B9ACD00A08D0D /* NSColor+Extension.swift in Sources */,
+				035549502B6B9BF000A08D0D /* InsetItemsGridViewController.swift in Sources */,
+				035549462B6B995700A08D0D /* GridViewController.swift in Sources */,
 				035549382B6B934F00A08D0D /* DevViewController.swift in Sources */,
 				0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */,
 				0355493C2B6B93C300A08D0D /* ListViewController.swift in Sources */,
