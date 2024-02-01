@@ -33,6 +33,8 @@
 		035549742B6BC9D600A08D0D /* SectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549732B6BC9D600A08D0D /* SectionHeaderFooterViewController.swift */; };
 		035549762B6BCA8B00A08D0D /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549752B6BCA8B00A08D0D /* TitleSupplementaryView.swift */; };
 		035549782B6BCA9A00A08D0D /* TitleSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 035549772B6BCA9A00A08D0D /* TitleSupplementaryView.xib */; };
+		0355497A2B6BE61B00A08D0D /* NestedGroups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549792B6BE61B00A08D0D /* NestedGroups.storyboard */; };
+		0355497D2B6BE67400A08D0D /* NestedGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355497C2B6BE67400A08D0D /* NestedGroupsViewController.swift */; };
 		0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ED002B6A755200411E02 /* AppDelegate.swift */; };
 		0384ED052B6A755300411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED042B6A755300411E02 /* Assets.xcassets */; };
 		0384ED082B6A755300411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED062B6A755300411E02 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		035549732B6BC9D600A08D0D /* SectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		035549752B6BCA8B00A08D0D /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		035549772B6BCA9A00A08D0D /* TitleSupplementaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleSupplementaryView.xib; sourceTree = "<group>"; };
+		035549792B6BE61B00A08D0D /* NestedGroups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NestedGroups.storyboard; sourceTree = "<group>"; };
+		0355497C2B6BE67400A08D0D /* NestedGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedGroupsViewController.swift; sourceTree = "<group>"; };
 		0384ECFD2B6A755200411E02 /* CocoaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ED002B6A755200411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ED042B6A755300411E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				035549642B6BC20F00A08D0D /* AdaptiveSections.storyboard */,
 				0355496A2B6BC43E00A08D0D /* ItemBadgeSupplementary.storyboard */,
 				035549702B6BC98000A08D0D /* SectionHeaderFooter.storyboard */,
+				035549792B6BE61B00A08D0D /* NestedGroups.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -202,6 +207,14 @@
 			path = SectionHeaderFooter;
 			sourceTree = "<group>";
 		};
+		0355497B2B6BE64300A08D0D /* NestedGroups */ = {
+			isa = PBXGroup;
+			children = (
+				0355497C2B6BE67400A08D0D /* NestedGroupsViewController.swift */,
+			);
+			path = NestedGroups;
+			sourceTree = "<group>";
+		};
 		0384ECF42B6A755200411E02 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +247,7 @@
 				035549662B6BC22E00A08D0D /* AdaptiveSections */,
 				035549692B6BC42B00A08D0D /* ItemBadgeSupplementary */,
 				035549722B6BC9B300A08D0D /* SectionHeaderFooter */,
+				0355497B2B6BE64300A08D0D /* NestedGroups */,
 				0384ED002B6A755200411E02 /* AppDelegate.swift */,
 				0384ED042B6A755300411E02 /* Assets.xcassets */,
 				0384ED062B6A755300411E02 /* Main.storyboard */,
@@ -307,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				035549782B6BCA9A00A08D0D /* TitleSupplementaryView.xib in Resources */,
+				0355497A2B6BE61B00A08D0D /* NestedGroups.storyboard in Resources */,
 				0355493E2B6B94C200A08D0D /* ListItem.xib in Resources */,
 				035549652B6BC20F00A08D0D /* AdaptiveSections.storyboard in Resources */,
 				035549482B6B9A7800A08D0D /* TextItem.xib in Resources */,
@@ -334,6 +349,7 @@
 				035549742B6BC9D600A08D0D /* SectionHeaderFooterViewController.swift in Sources */,
 				035549432B6B955A00A08D0D /* ListItem.swift in Sources */,
 				0355494A2B6B9A8E00A08D0D /* TextItem.swift in Sources */,
+				0355497D2B6BE67400A08D0D /* NestedGroupsViewController.swift in Sources */,
 				035549762B6BCA8B00A08D0D /* TitleSupplementaryView.swift in Sources */,
 				035549612B6BBC6D00A08D0D /* DistinctSectionsViewController.swift in Sources */,
 				0355494D2B6B9ACD00A08D0D /* NSColor+Extension.swift in Sources */,
