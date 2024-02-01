@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CocoaExample
 //
-//  Created by codingmax on 2024/01/31.
+//  Created by Sungcheol Kim on 2024/01/31.
 //
 
 import Cocoa
