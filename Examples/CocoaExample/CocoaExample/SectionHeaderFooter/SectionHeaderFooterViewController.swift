@@ -10,8 +10,11 @@ import ComposeLayout
 
 class SectionHeaderFooterViewController: NSViewController {
     
-    static let sectionHeaderElementKind = "section-header-element-kind"
-    static let sectionFooterElementKind = "section-footer-element-kind"
+    private static let sectionHeaderElementKind = "section-header-element-kind"
+    private static let sectionFooterElementKind = "section-footer-element-kind"
+    private enum Sections {
+        case shared
+    }
     
     @IBOutlet private weak var collectionView: NSCollectionView!
     private var dataSource: NSCollectionViewDiffableDataSource<Int, Int>! = nil
@@ -25,38 +28,10 @@ class SectionHeaderFooterViewController: NSViewController {
 }
 
 extension SectionHeaderFooterViewController {
-    private func createLayout2() -> NSCollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalHeight(1.0))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(44))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-
-        let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 5
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10)
-
-        let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                      heightDimension: .estimated(44))
-//        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
-//            layoutSize: headerFooterSize,
-//            elementKind: Self.sectionHeaderElementKind,
-//            alignment: .top)
-//        let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(
-//            layoutSize: headerFooterSize,
-//            elementKind: Self.sectionFooterElementKind,
-//            alignment: .bottom)
-//        section.boundarySupplementaryItems = [sectionHeader, sectionFooter]
-
-        let layout = NSCollectionViewCompositionalLayout(section: section)
-        return layout
-    }
-
     private func createLayout() -> NSCollectionViewLayout {
         return ComposeLayout { environment in
             let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
-            Section(id: "section") {
+            Section(id: Sections.shared) {
                 HGroup {
                     Item(width: .fractionalWidth(1.0), height: .fractionalHeight(1.0))
                 }
@@ -93,6 +68,7 @@ extension SectionHeaderFooterViewController {
 
         collectionView.collectionViewLayout = createLayout()
     }
+    
     private func configureDataSource() {
         dataSource = NSCollectionViewDiffableDataSource<Int, Int>(collectionView: collectionView) {
                 (collectionView: NSCollectionView, indexPath: IndexPath, identifier: Int) -> NSCollectionViewItem? in
