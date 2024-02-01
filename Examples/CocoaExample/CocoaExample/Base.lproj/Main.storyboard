@@ -776,6 +776,17 @@
                                     <segue destination="phF-yJ-hHW" kind="show" id="R6Q-dC-psP"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s8k-ZN-vdv">
+                                <rect key="frame" x="168" y="125" width="144" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Adaptive Sections" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="v08-ak-xsQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="ZzN-ki-lL7" kind="show" id="ayi-Cz-PIW"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -797,7 +808,15 @@
                 <controllerPlaceholder storyboardName="DistinctSections" id="phF-yJ-hHW" sceneMemberID="viewController"/>
                 <customObject id="c5x-N5-u6y" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22" y="1055"/>
+            <point key="canvasLocation" x="528" y="697"/>
+        </scene>
+        <!--AdaptiveSections-->
+        <scene sceneID="X9J-Dx-Rql">
+            <objects>
+                <controllerPlaceholder storyboardName="AdaptiveSections" id="ZzN-ki-lL7" sceneMemberID="viewController"/>
+                <customObject id="S4s-ug-EOu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="758"/>
         </scene>
         <!--InsetItemsGrid-->
         <scene sceneID="97p-sa-bNu">

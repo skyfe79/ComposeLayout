@@ -24,6 +24,8 @@
 		0355495E2B6BA03800A08D0D /* TwoColumnsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355495D2B6BA03800A08D0D /* TwoColumnsGridViewController.swift */; };
 		035549612B6BBC6D00A08D0D /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549602B6BBC6D00A08D0D /* DistinctSectionsViewController.swift */; };
 		035549632B6BBC7F00A08D0D /* DistinctSections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549622B6BBC7F00A08D0D /* DistinctSections.storyboard */; };
+		035549652B6BC20F00A08D0D /* AdaptiveSections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035549642B6BC20F00A08D0D /* AdaptiveSections.storyboard */; };
+		035549682B6BC24A00A08D0D /* AdaptiveSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035549672B6BC24A00A08D0D /* AdaptiveSectionsViewController.swift */; };
 		0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ED002B6A755200411E02 /* AppDelegate.swift */; };
 		0384ED052B6A755300411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED042B6A755300411E02 /* Assets.xcassets */; };
 		0384ED082B6A755300411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED062B6A755300411E02 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		0355495D2B6BA03800A08D0D /* TwoColumnsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsGridViewController.swift; sourceTree = "<group>"; };
 		035549602B6BBC6D00A08D0D /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
 		035549622B6BBC7F00A08D0D /* DistinctSections.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DistinctSections.storyboard; sourceTree = "<group>"; };
+		035549642B6BC20F00A08D0D /* AdaptiveSections.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdaptiveSections.storyboard; sourceTree = "<group>"; };
+		035549672B6BC24A00A08D0D /* AdaptiveSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionsViewController.swift; sourceTree = "<group>"; };
 		0384ECFD2B6A755200411E02 /* CocoaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ED002B6A755200411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ED042B6A755300411E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				035549522B6B9C8700A08D0D /* InsetItemsGrid.storyboard */,
 				0355495A2B6B9FF000A08D0D /* TwoColumns.storyboard */,
 				035549622B6BBC7F00A08D0D /* DistinctSections.storyboard */,
+				035549642B6BC20F00A08D0D /* AdaptiveSections.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -152,6 +157,14 @@
 				035549602B6BBC6D00A08D0D /* DistinctSectionsViewController.swift */,
 			);
 			path = DistinctSections;
+			sourceTree = "<group>";
+		};
+		035549662B6BC22E00A08D0D /* AdaptiveSections */ = {
+			isa = PBXGroup;
+			children = (
+				035549672B6BC24A00A08D0D /* AdaptiveSectionsViewController.swift */,
+			);
+			path = AdaptiveSections;
 			sourceTree = "<group>";
 		};
 		0384ECF42B6A755200411E02 = {
@@ -183,6 +196,7 @@
 				0355494E2B6B9BC200A08D0D /* InsetItemsGrid */,
 				0355495C2B6BA01200A08D0D /* TwoColumnsGrid */,
 				0355495F2B6BBC5700A08D0D /* DistinctSections */,
+				035549662B6BC22E00A08D0D /* AdaptiveSections */,
 				0384ED002B6A755200411E02 /* AppDelegate.swift */,
 				0384ED042B6A755300411E02 /* Assets.xcassets */,
 				0384ED062B6A755300411E02 /* Main.storyboard */,
@@ -256,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0355493E2B6B94C200A08D0D /* ListItem.xib in Resources */,
+				035549652B6BC20F00A08D0D /* AdaptiveSections.storyboard in Resources */,
 				035549482B6B9A7800A08D0D /* TextItem.xib in Resources */,
 				0384ED052B6A755300411E02 /* Assets.xcassets in Resources */,
 				0384ED082B6A755300411E02 /* Main.storyboard in Resources */,
@@ -279,6 +294,7 @@
 				0355494A2B6B9A8E00A08D0D /* TextItem.swift in Sources */,
 				035549612B6BBC6D00A08D0D /* DistinctSectionsViewController.swift in Sources */,
 				0355494D2B6B9ACD00A08D0D /* NSColor+Extension.swift in Sources */,
+				035549682B6BC24A00A08D0D /* AdaptiveSectionsViewController.swift in Sources */,
 				0355495E2B6BA03800A08D0D /* TwoColumnsGridViewController.swift in Sources */,
 				035549502B6B9BF000A08D0D /* InsetItemsGridViewController.swift in Sources */,
 				035549462B6B995700A08D0D /* GridViewController.swift in Sources */,
