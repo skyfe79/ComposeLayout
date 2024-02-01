@@ -33,7 +33,7 @@ public struct Item: ComposeLayoutItem {
     public var width: NSCollectionLayoutDimension
     public var height: NSCollectionLayoutDimension
     public var supplementaryItems: [SupplementaryItem] = []
-    public var contentInsets: NSDirectionalEdgeInsets = .zero
+    public var contentInsets: NSDirectionalEdgeInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
     public var edgeSpacing: NSCollectionLayoutEdgeSpacing?
     
     public init(width: NSCollectionLayoutDimension = .fractionalWidth(1.0), height: NSCollectionLayoutDimension = .fractionalHeight(1.0)) {
