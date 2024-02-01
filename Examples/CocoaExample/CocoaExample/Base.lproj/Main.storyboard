@@ -754,12 +754,31 @@
                                     <segue destination="s5u-Fx-YTB" kind="show" id="YoX-yl-lhJ"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPg-aL-kzP">
+                                <rect key="frame" x="296" y="196" width="137" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Two Colums Grid" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xHX-YM-tNh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="3rd-OK-Igy" kind="show" id="yq6-nc-S53"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="Hgm-ZV-61K" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="790"/>
+        </scene>
+        <!--TwoColumns-->
+        <scene sceneID="7Yn-Vt-g80">
+            <objects>
+                <controllerPlaceholder storyboardName="TwoColumns" id="3rd-OK-Igy" sceneMemberID="viewController"/>
+                <customObject id="Sp3-cZ-WBt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="1048"/>
         </scene>
         <!--InsetItemsGrid-->
         <scene sceneID="97p-sa-bNu">
