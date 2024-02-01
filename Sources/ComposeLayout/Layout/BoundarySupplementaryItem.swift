@@ -17,8 +17,8 @@ public struct BoundarySupplementaryItem {
     private var width: NSCollectionLayoutDimension = .fractionalWidth(1.0)
     private var height: NSCollectionLayoutDimension = .fractionalHeight(1.0)
     private var elementKind: String = ElementKind.unknown
-    private var pinToVisibleBounds: Bool = false
-    private var extendsBoundary: Bool = false
+    private var pinToVisibleBounds: Bool?
+    private var extendsBoundary: Bool?
     private var alignment: NSRectAlignment = .none
     private var absoluteOffset: CGPoint?
     private var zIndex: Int?
@@ -41,8 +41,13 @@ extension BoundarySupplementaryItem: NSCollectionLayoutBoundarySupplementaryItem
             NSCollectionLayoutBoundarySupplementaryItem(layoutSize: size, elementKind: elementKind, alignment: alignment)
         }
         
-        item.pinToVisibleBounds = pinToVisibleBounds
-        item.extendsBoundary = extendsBoundary
+        if let pinToVisibleBounds {
+            item.pinToVisibleBounds = pinToVisibleBounds
+        }
+        
+        if let extendsBoundary {
+            item.extendsBoundary = extendsBoundary
+        }
         
         if let zIndex {
             item.zIndex = zIndex

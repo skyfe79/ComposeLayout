@@ -15,7 +15,7 @@ import AppKit
 
 public struct DecorationItem {
     public var elementKind: String
-    public var contentInsets: NSDirectionalEdgeInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+    public var contentInsets: NSDirectionalEdgeInsets?
     public var edgeSpacing: NSCollectionLayoutEdgeSpacing?
     public var zIndex: Int?
     
@@ -25,7 +25,10 @@ public struct DecorationItem {
             
     public func toNSCollectionLayoutDecorationItem() -> NSCollectionLayoutDecorationItem {
         let item = NSCollectionLayoutDecorationItem.background(elementKind: elementKind)
-        item.contentInsets = contentInsets
+        
+        if let contentInsets {
+            item.contentInsets = contentInsets
+        }
         
         if let edgeSpacing {
             item.edgeSpacing = edgeSpacing
