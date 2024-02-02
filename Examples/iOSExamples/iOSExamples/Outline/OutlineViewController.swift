@@ -21,7 +21,8 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
         return [
             OutlineItem(title: "Compositional Layout", subitems: [
                 OutlineItem(title: "Getting Started", subitems: [
-                    OutlineItem(title: "Grid", viewController: GridViewController.self)
+                    OutlineItem(title: "Grid", viewController: GridViewController.self),
+                    OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self)
                 ]),
             ]),
             
