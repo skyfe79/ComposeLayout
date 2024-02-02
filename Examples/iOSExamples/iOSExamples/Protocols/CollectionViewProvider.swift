@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-protocol CollectionViewProvider {
-    var collectionView: UICollectionView! { get }
+protocol CollectionViewProvider: AnyObject {
+    var collectionView: UICollectionView! { get set }
 }
