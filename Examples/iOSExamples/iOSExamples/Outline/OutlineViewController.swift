@@ -26,6 +26,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
                     OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self),
                     OutlineItem(title: "Per-Section Layout", subitems: [
                         OutlineItem(title: "Distinct Sections", viewController: DistinctSectionsViewController.self),
+                        OutlineItem(title: "Adaptive Sections", viewController: AdaptiveSectionsViewController.self)
                     ])
                 ]),
             ]),
