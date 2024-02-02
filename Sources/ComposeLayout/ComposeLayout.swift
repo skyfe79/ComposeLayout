@@ -49,3 +49,14 @@ extension ComposeLayout {
         return layout
     }
 }
+
+// MARK: - Support List
+#if !os(macOS)
+extension ComposeLayout {
+    @available(iOS 14.0, *)
+    public static func list(using configuration: UICollectionLayoutListConfiguration) -> PlatformCompositionalLayout {
+        return PlatformCompositionalLayout.list(using: configuration)
+    }
+}
+#endif
+
