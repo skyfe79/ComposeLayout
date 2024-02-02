@@ -18,6 +18,8 @@
 		031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519AC2B6CEDF300F17A15 /* UIColor+Extension.swift */; };
 		031519B02B6D16D200F17A15 /* TwoColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519AF2B6D16D200F17A15 /* TwoColumnViewController.swift */; };
 		031519B32B6D18F600F17A15 /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519B22B6D18F600F17A15 /* InsetItemsGridViewController.swift */; };
+		031519B62B6D1EB500F17A15 /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519B52B6D1EB500F17A15 /* DistinctSectionsViewController.swift */; };
+		031519B82B6D1F6F00F17A15 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519B72B6D1F6F00F17A15 /* ListCell.swift */; };
 		0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDC2B6A142D00411E02 /* AppDelegate.swift */; };
 		0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */; };
 		0384ECE42B6A142D00411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE22B6A142D00411E02 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		031519AC2B6CEDF300F17A15 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		031519AF2B6D16D200F17A15 /* TwoColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnViewController.swift; sourceTree = "<group>"; };
 		031519B22B6D18F600F17A15 /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
+		031519B52B6D1EB500F17A15 /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
+		031519B72B6D1F6F00F17A15 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		0384ECD92B6A142D00411E02 /* iOSExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ECDC2B6A142D00411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				031519A52B6CEBF000F17A15 /* Grid */,
 				031519B12B6D18E000F17A15 /* InsetItemsGrid */,
 				031519AE2B6D16BD00F17A15 /* TwoColumnGrid */,
+				031519B42B6D1EA100F17A15 /* DistinctSections */,
 			);
 			path = "Compositonal Layout";
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				031519A92B6CED4300F17A15 /* TextCell.swift */,
+				031519B72B6D1F6F00F17A15 /* ListCell.swift */,
 			);
 			path = "Cells and Supplementary Views";
 			sourceTree = "<group>";
@@ -135,6 +141,14 @@
 				031519B22B6D18F600F17A15 /* InsetItemsGridViewController.swift */,
 			);
 			path = InsetItemsGrid;
+			sourceTree = "<group>";
+		};
+		031519B42B6D1EA100F17A15 /* DistinctSections */ = {
+			isa = PBXGroup;
+			children = (
+				031519B52B6D1EB500F17A15 /* DistinctSectionsViewController.swift */,
+			);
+			path = DistinctSections;
 			sourceTree = "<group>";
 		};
 		0384ECD02B6A142D00411E02 = {
@@ -258,9 +272,11 @@
 				031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */,
 				031519982B6C7D8100F17A15 /* DevViewController.swift in Sources */,
 				0315199E2B6C7FEF00F17A15 /* CollectionViewProvider.swift in Sources */,
+				031519B82B6D1F6F00F17A15 /* ListCell.swift in Sources */,
 				031519B02B6D16D200F17A15 /* TwoColumnViewController.swift in Sources */,
 				031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */,
 				031519962B6C7D4600F17A15 /* OutlineViewController.swift in Sources */,
+				031519B62B6D1EB500F17A15 /* DistinctSectionsViewController.swift in Sources */,
 				0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */,
 				031519B32B6D18F600F17A15 /* InsetItemsGridViewController.swift in Sources */,
 				031519A32B6C867A00F17A15 /* Example.swift in Sources */,

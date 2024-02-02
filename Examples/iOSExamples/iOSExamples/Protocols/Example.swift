@@ -17,6 +17,7 @@ protocol Example: CollectionViewProvider, DiffableDataSourceProvider {
 extension Example where Self: UIViewController {
     func configureHierarchy() {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
+        collectionView.backgroundColor = .systemBackground
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionView)
         
@@ -28,3 +29,4 @@ extension Example where Self: UIViewController {
         ])
     }
 }
+
