@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DevViewController.swift
 //  iOSExamples
 //
 //  Created by Sungcheol Kim on 2024/01/31.
@@ -57,7 +57,7 @@ class MyBackgroundView3: UICollectionReusableView {
 }
 
 
-class ViewController: UIViewController {
+class DevViewController: UIViewController {
 //    lazy var myLayout = {
 //        ComposeLayout { environment in
 //            Section(id: UUID()) {
@@ -225,7 +225,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension DevViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 3
     }

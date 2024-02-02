@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031519962B6C7D4600F17A15 /* OutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519952B6C7D4600F17A15 /* OutlineViewController.swift */; };
+		031519982B6C7D8100F17A15 /* DevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519972B6C7D8100F17A15 /* DevViewController.swift */; };
+		0315199C2B6C7E6F00F17A15 /* OutlineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315199B2B6C7E6F00F17A15 /* OutlineItem.swift */; };
+		0315199E2B6C7FEF00F17A15 /* CollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315199D2B6C7FEF00F17A15 /* CollectionViewProvider.swift */; };
+		031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519A02B6C802F00F17A15 /* DiffableDataSourceProvider.swift */; };
+		031519A32B6C867A00F17A15 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519A22B6C867A00F17A15 /* Example.swift */; };
+		031519A72B6CEBFF00F17A15 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519A62B6CEBFF00F17A15 /* GridViewController.swift */; };
+		031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519A92B6CED4300F17A15 /* TextCell.swift */; };
+		031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519AC2B6CEDF300F17A15 /* UIColor+Extension.swift */; };
 		0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDC2B6A142D00411E02 /* AppDelegate.swift */; };
 		0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */; };
-		0384ECE12B6A142D00411E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECE02B6A142D00411E02 /* ViewController.swift */; };
 		0384ECE42B6A142D00411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE22B6A142D00411E02 /* Main.storyboard */; };
 		0384ECE62B6A142E00411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE52B6A142E00411E02 /* Assets.xcassets */; };
 		0384ECE92B6A142E00411E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE72B6A142E00411E02 /* LaunchScreen.storyboard */; };
@@ -17,10 +25,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031519952B6C7D4600F17A15 /* OutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineViewController.swift; sourceTree = "<group>"; };
+		031519972B6C7D8100F17A15 /* DevViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevViewController.swift; sourceTree = "<group>"; };
+		0315199B2B6C7E6F00F17A15 /* OutlineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineItem.swift; sourceTree = "<group>"; };
+		0315199D2B6C7FEF00F17A15 /* CollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProvider.swift; sourceTree = "<group>"; };
+		031519A02B6C802F00F17A15 /* DiffableDataSourceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceProvider.swift; sourceTree = "<group>"; };
+		031519A22B6C867A00F17A15 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		031519A62B6CEBFF00F17A15 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		031519A92B6CED4300F17A15 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		031519AC2B6CEDF300F17A15 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0384ECD92B6A142D00411E02 /* iOSExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ECDC2B6A142D00411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0384ECE02B6A142D00411E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0384ECE32B6A142D00411E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0384ECE52B6A142E00411E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0384ECE82B6A142E00411E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +56,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031519992B6C7E5500F17A15 /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				0315199A2B6C7E6200F17A15 /* Models */,
+				031519952B6C7D4600F17A15 /* OutlineViewController.swift */,
+			);
+			path = Outline;
+			sourceTree = "<group>";
+		};
+		0315199A2B6C7E6200F17A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0315199B2B6C7E6F00F17A15 /* OutlineItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0315199F2B6C801600F17A15 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0315199D2B6C7FEF00F17A15 /* CollectionViewProvider.swift */,
+				031519A02B6C802F00F17A15 /* DiffableDataSourceProvider.swift */,
+				031519A22B6C867A00F17A15 /* Example.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		031519A42B6CEBB200F17A15 /* Compositonal Layout */ = {
+			isa = PBXGroup;
+			children = (
+				031519A52B6CEBF000F17A15 /* Grid */,
+			);
+			path = "Compositonal Layout";
+			sourceTree = "<group>";
+		};
+		031519A52B6CEBF000F17A15 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				031519A62B6CEBFF00F17A15 /* GridViewController.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		031519A82B6CED2400F17A15 /* Cells and Supplementary Views */ = {
+			isa = PBXGroup;
+			children = (
+				031519A92B6CED4300F17A15 /* TextCell.swift */,
+			);
+			path = "Cells and Supplementary Views";
+			sourceTree = "<group>";
+		};
+		031519AB2B6CEDE400F17A15 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				031519AC2B6CEDF300F17A15 /* UIColor+Extension.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
 		0384ECD02B6A142D00411E02 = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +136,14 @@
 		0384ECDB2B6A142D00411E02 /* iOSExamples */ = {
 			isa = PBXGroup;
 			children = (
+				031519AB2B6CEDE400F17A15 /* Extenstions */,
+				031519A82B6CED2400F17A15 /* Cells and Supplementary Views */,
+				0315199F2B6C801600F17A15 /* Protocols */,
+				031519992B6C7E5500F17A15 /* Outline */,
+				031519A42B6CEBB200F17A15 /* Compositonal Layout */,
+				031519972B6C7D8100F17A15 /* DevViewController.swift */,
 				0384ECDC2B6A142D00411E02 /* AppDelegate.swift */,
 				0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */,
-				0384ECE02B6A142D00411E02 /* ViewController.swift */,
 				0384ECE22B6A142D00411E02 /* Main.storyboard */,
 				0384ECE52B6A142E00411E02 /* Assets.xcassets */,
 				0384ECE72B6A142E00411E02 /* LaunchScreen.storyboard */,
@@ -153,9 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0384ECE12B6A142D00411E02 /* ViewController.swift in Sources */,
+				031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */,
+				031519982B6C7D8100F17A15 /* DevViewController.swift in Sources */,
+				0315199E2B6C7FEF00F17A15 /* CollectionViewProvider.swift in Sources */,
+				031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */,
+				031519962B6C7D4600F17A15 /* OutlineViewController.swift in Sources */,
 				0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */,
+				031519A32B6C867A00F17A15 /* Example.swift in Sources */,
 				0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */,
+				0315199C2B6C7E6F00F17A15 /* OutlineItem.swift in Sources */,
+				031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */,
+				031519A72B6CEBFF00F17A15 /* GridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
