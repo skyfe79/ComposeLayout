@@ -17,18 +17,31 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Sections, OutlineItem>!
     
+    private lazy var gettingStarted: OutlineItem = {
+        OutlineItem(title: "Getting Started", subitems: [
+            OutlineItem(title: "Grid", viewController: GridViewController.self),
+            OutlineItem(title: "Inset Items Grid", viewController: InsetItemsGridViewController.self),
+            OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self),
+            OutlineItem(title: "Per-Section Layout", subitems: [
+                OutlineItem(title: "Distinct Sections", viewController: DistinctSectionsViewController.self),
+                OutlineItem(title: "Adaptive Sections", viewController: AdaptiveSectionsViewController.self)
+            ])
+        ])
+    }()
+    
+    private lazy var advancedLayouts: OutlineItem = {
+        OutlineItem(title: "Advanced Layouts", subitems: [
+            OutlineItem(title: "Supplementary Views", subitems: [
+                OutlineItem(title: "Item Badges", viewController: ItemBadgeSupplementaryViewController.self),
+            ])
+        ])
+    }()
+    
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "Compositional Layout", subitems: [
-                OutlineItem(title: "Getting Started", subitems: [
-                    OutlineItem(title: "Grid", viewController: GridViewController.self),
-                    OutlineItem(title: "Inset Items Grid", viewController: InsetItemsGridViewController.self),
-                    OutlineItem(title: "Two-Column Grid", viewController: TwoColumnViewController.self),
-                    OutlineItem(title: "Per-Section Layout", subitems: [
-                        OutlineItem(title: "Distinct Sections", viewController: DistinctSectionsViewController.self),
-                        OutlineItem(title: "Adaptive Sections", viewController: AdaptiveSectionsViewController.self)
-                    ])
-                ]),
+                self.gettingStarted,
+                self.advancedLayouts
             ]),
             
             OutlineItem(title: "Development", subitems: [

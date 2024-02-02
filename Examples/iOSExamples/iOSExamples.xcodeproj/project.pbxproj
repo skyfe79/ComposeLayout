@@ -21,6 +21,9 @@
 		031519B62B6D1EB500F17A15 /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519B52B6D1EB500F17A15 /* DistinctSectionsViewController.swift */; };
 		031519B82B6D1F6F00F17A15 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519B72B6D1F6F00F17A15 /* ListCell.swift */; };
 		031519BB2B6D274B00F17A15 /* AdaptiveSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519BA2B6D274B00F17A15 /* AdaptiveSectionsViewController.swift */; };
+		031519BE2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */; };
+		031519C02B6D2A1800F17A15 /* BadgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519BF2B6D2A1800F17A15 /* BadgeModel.swift */; };
+		031519C32B6D2AC800F17A15 /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */; };
 		0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDC2B6A142D00411E02 /* AppDelegate.swift */; };
 		0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */; };
 		0384ECE42B6A142D00411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE22B6A142D00411E02 /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		031519B52B6D1EB500F17A15 /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
 		031519B72B6D1F6F00F17A15 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		031519BA2B6D274B00F17A15 /* AdaptiveSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionsViewController.swift; sourceTree = "<group>"; };
+		031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBadgeSupplementaryViewController.swift; sourceTree = "<group>"; };
+		031519BF2B6D2A1800F17A15 /* BadgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeModel.swift; sourceTree = "<group>"; };
+		031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
 		0384ECD92B6A142D00411E02 /* iOSExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ECDC2B6A142D00411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,18 +75,9 @@
 		031519992B6C7E5500F17A15 /* Outline */ = {
 			isa = PBXGroup;
 			children = (
-				0315199A2B6C7E6200F17A15 /* Models */,
 				031519952B6C7D4600F17A15 /* OutlineViewController.swift */,
 			);
 			path = Outline;
-			sourceTree = "<group>";
-		};
-		0315199A2B6C7E6200F17A15 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0315199B2B6C7E6F00F17A15 /* OutlineItem.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		0315199F2B6C801600F17A15 /* Protocols */ = {
@@ -118,6 +115,7 @@
 			children = (
 				031519A92B6CED4300F17A15 /* TextCell.swift */,
 				031519B72B6D1F6F00F17A15 /* ListCell.swift */,
+				031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */,
 			);
 			path = "Cells and Supplementary Views";
 			sourceTree = "<group>";
@@ -162,6 +160,23 @@
 			path = AdaptiveSections;
 			sourceTree = "<group>";
 		};
+		031519BC2B6D299700F17A15 /* Advanced Layout */ = {
+			isa = PBXGroup;
+			children = (
+				031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */,
+			);
+			path = "Advanced Layout";
+			sourceTree = "<group>";
+		};
+		031519C12B6D2A2200F17A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0315199B2B6C7E6F00F17A15 /* OutlineItem.swift */,
+				031519BF2B6D2A1800F17A15 /* BadgeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0384ECD02B6A142D00411E02 = {
 			isa = PBXGroup;
 			children = (
@@ -184,10 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				031519AB2B6CEDE400F17A15 /* Extenstions */,
+				031519C12B6D2A2200F17A15 /* Models */,
 				031519A82B6CED2400F17A15 /* Cells and Supplementary Views */,
 				0315199F2B6C801600F17A15 /* Protocols */,
 				031519992B6C7E5500F17A15 /* Outline */,
 				031519A42B6CEBB200F17A15 /* Compositonal Layout */,
+				031519BC2B6D299700F17A15 /* Advanced Layout */,
 				031519972B6C7D8100F17A15 /* DevViewController.swift */,
 				0384ECDC2B6A142D00411E02 /* AppDelegate.swift */,
 				0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */,
@@ -295,6 +312,9 @@
 				0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */,
 				0315199C2B6C7E6F00F17A15 /* OutlineItem.swift in Sources */,
 				031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */,
+				031519C02B6D2A1800F17A15 /* BadgeModel.swift in Sources */,
+				031519BE2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift in Sources */,
+				031519C32B6D2AC800F17A15 /* BadgeSupplementaryView.swift in Sources */,
 				031519A72B6CEBFF00F17A15 /* GridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
