@@ -24,12 +24,14 @@
 		031519BE2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */; };
 		031519C02B6D2A1800F17A15 /* BadgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519BF2B6D2A1800F17A15 /* BadgeModel.swift */; };
 		031519C32B6D2AC800F17A15 /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */; };
+		031519C52B6D2CB700F17A15 /* SectionHeadersFootersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031519C42B6D2CB600F17A15 /* SectionHeadersFootersViewController.swift */; };
 		0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDC2B6A142D00411E02 /* AppDelegate.swift */; };
 		0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */; };
 		0384ECE42B6A142D00411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE22B6A142D00411E02 /* Main.storyboard */; };
 		0384ECE62B6A142E00411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE52B6A142E00411E02 /* Assets.xcassets */; };
 		0384ECE92B6A142E00411E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE72B6A142E00411E02 /* LaunchScreen.storyboard */; };
 		0384ECF32B6A1CB600411E02 /* ComposeLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 0384ECF22B6A1CB600411E02 /* ComposeLayout */; };
+		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,7 @@
 		031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBadgeSupplementaryViewController.swift; sourceTree = "<group>"; };
 		031519BF2B6D2A1800F17A15 /* BadgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeModel.swift; sourceTree = "<group>"; };
 		031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
+		031519C42B6D2CB600F17A15 /* SectionHeadersFootersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeadersFootersViewController.swift; sourceTree = "<group>"; };
 		0384ECD92B6A142D00411E02 /* iOSExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384ECDC2B6A142D00411E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		0384ECE82B6A142E00411E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0384ECEA2B6A142E00411E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0384ECF02B6A149C00411E02 /* ComposeLayout */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ComposeLayout; path = ../..; sourceTree = "<group>"; };
+		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				031519A92B6CED4300F17A15 /* TextCell.swift */,
 				031519B72B6D1F6F00F17A15 /* ListCell.swift */,
 				031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */,
+				03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */,
 			);
 			path = "Cells and Supplementary Views";
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */,
+				031519C42B6D2CB600F17A15 /* SectionHeadersFootersViewController.swift */,
 			);
 			path = "Advanced Layout";
 			sourceTree = "<group>";
@@ -299,6 +305,8 @@
 			files = (
 				031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */,
 				031519982B6C7D8100F17A15 /* DevViewController.swift in Sources */,
+				031519C52B6D2CB700F17A15 /* SectionHeadersFootersViewController.swift in Sources */,
+				03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */,
 				0315199E2B6C7FEF00F17A15 /* CollectionViewProvider.swift in Sources */,
 				031519B82B6D1F6F00F17A15 /* ListCell.swift in Sources */,
 				031519BB2B6D274B00F17A15 /* AdaptiveSectionsViewController.swift in Sources */,

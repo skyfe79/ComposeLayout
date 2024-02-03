@@ -33,6 +33,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
         OutlineItem(title: "Advanced Layouts", subitems: [
             OutlineItem(title: "Supplementary Views", subitems: [
                 OutlineItem(title: "Item Badges", viewController: ItemBadgeSupplementaryViewController.self),
+                OutlineItem(title: "Section Headers/Footers", viewController: SectionHeadersFootersViewController.self),
             ])
         ])
     }()
