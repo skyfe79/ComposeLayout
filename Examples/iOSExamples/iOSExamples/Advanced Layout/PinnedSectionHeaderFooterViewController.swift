@@ -1,14 +1,15 @@
 //
-//  SectionHeadersFootersViewController.swift
+//  PinnedSectionHeaderFooterViewController.swift
 //  iOSExamples
 //
-//  Created by codingmax on 2024/02/02.
+//  Created by codingmax on 2024/02/03.
 //
 
 import UIKit
 import ComposeLayout
 
-class SectionHeadersFootersViewController: UIViewController, Example {
+class PinnedSectionHeaderFooterViewController: UIViewController, Example {
+
     static let sectionHeaderElementKind = "section-header-element-kind"
     static let sectionFooterElementKind = "section-footer-element-kind"
     
@@ -25,14 +26,14 @@ class SectionHeadersFootersViewController: UIViewController, Example {
 
 }
 
-extension SectionHeadersFootersViewController: UICollectionViewDelegate {
+extension PinnedSectionHeaderFooterViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
     }
 }
 
 
-extension SectionHeadersFootersViewController {
+extension PinnedSectionHeaderFooterViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { environment in
             let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
@@ -51,6 +52,8 @@ extension SectionHeadersFootersViewController {
                 BoundarySupplementaryItem(elementKind: Self.sectionHeaderElementKind)
                     .alignment(.top)
                     .size(headerFooterSize)
+                    .pinToVisibleBounds(true)
+                    .zIndex(2)
                 BoundarySupplementaryItem(elementKind: Self.sectionFooterElementKind)
                     .alignment(.bottom)
                     .size(headerFooterSize)
@@ -60,7 +63,7 @@ extension SectionHeadersFootersViewController {
     }
 }
 
-extension SectionHeadersFootersViewController {
+extension PinnedSectionHeaderFooterViewController {
 
     func configureDataSource() {
         let cellRegistration = UICollectionView.CellRegistration<ListCell, Int> { cell, indexPath, identifier in
