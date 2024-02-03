@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-Simple example of a self-sizing supplementary title view
-*/
-
 import UIKit
 
 class TitleSupplementaryView: UICollectionReusableView {

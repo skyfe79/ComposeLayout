@@ -33,6 +33,8 @@
 		0384ECF32B6A1CB600411E02 /* ComposeLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 0384ECF22B6A1CB600411E02 /* ComposeLayout */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
+		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
+		03D0C56F2B6E28930059E744 /* SectionBackgroundDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56E2B6E28930059E744 /* SectionBackgroundDecorationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		0384ECF02B6A149C00411E02 /* ComposeLayout */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ComposeLayout; path = ../..; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
+		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
+		03D0C56E2B6E28930059E744 /* SectionBackgroundDecorationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionBackgroundDecorationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		031519A82B6CED2400F17A15 /* Cells and Supplementary Views */ = {
 			isa = PBXGroup;
 			children = (
+				03D0C56E2B6E28930059E744 /* SectionBackgroundDecorationView.swift */,
 				031519A92B6CED4300F17A15 /* TextCell.swift */,
 				031519B72B6D1F6F00F17A15 /* ListCell.swift */,
 				031519C22B6D2AC800F17A15 /* BadgeSupplementaryView.swift */,
@@ -173,6 +178,7 @@
 				031519BD2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift */,
 				031519C42B6D2CB600F17A15 /* SectionHeadersFootersViewController.swift */,
 				03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */,
+				03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */,
 			);
 			path = "Advanced Layout";
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */,
 				031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */,
 				031519982B6C7D8100F17A15 /* DevViewController.swift in Sources */,
 				031519C52B6D2CB700F17A15 /* SectionHeadersFootersViewController.swift in Sources */,
@@ -321,6 +328,7 @@
 				0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */,
 				031519B32B6D18F600F17A15 /* InsetItemsGridViewController.swift in Sources */,
 				031519A32B6C867A00F17A15 /* Example.swift in Sources */,
+				03D0C56F2B6E28930059E744 /* SectionBackgroundDecorationView.swift in Sources */,
 				0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */,
 				0315199C2B6C7E6F00F17A15 /* OutlineItem.swift in Sources */,
 				031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */,
