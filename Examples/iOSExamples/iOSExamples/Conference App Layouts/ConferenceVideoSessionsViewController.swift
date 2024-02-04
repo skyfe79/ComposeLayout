@@ -34,7 +34,7 @@ extension ConferenceVideoSessionsViewController {
         config.interSectionSpacing = 20
         
         return ComposeLayout { sectionIndex, environment in
-            Section(id: sectionIndex) {
+            Section {
                 let groupFractionalWidth = CGFloat(environment.container.effectiveContentSize.width > 500 ? 0.425 : 0.85)
                 HGroup {
                     Item()

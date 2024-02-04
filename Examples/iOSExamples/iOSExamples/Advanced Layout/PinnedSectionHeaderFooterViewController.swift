@@ -37,7 +37,7 @@ extension PinnedSectionHeaderFooterViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { index, environment in
             let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
-            Section(id: "main") {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(1.0))

@@ -28,7 +28,7 @@ class ConferenceNewsFeedViewController: UIViewController, Example {
 extension ConferenceNewsFeedViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { sectionIndex, environment in
-            Section(id: Sections.main) {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(1.0))

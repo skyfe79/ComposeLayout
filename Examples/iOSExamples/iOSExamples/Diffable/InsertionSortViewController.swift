@@ -40,7 +40,7 @@ extension InsertionSortViewController {
             let contentSize = environment.container.effectiveContentSize
             let columns = Int(contentSize.width / InsertionSortViewController.nodeSize.width)
             let rowHeight = InsertionSortViewController.nodeSize.height
-            Section(id: "section") {
+            Section {
                 HGroup(repeatItems: columns) {
                     Item()
                         .width(.fractionalWidth(1.0))

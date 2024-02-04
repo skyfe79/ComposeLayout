@@ -30,7 +30,7 @@ class ItemBadgeSupplementaryViewController: UIViewController, Example {
 extension ItemBadgeSupplementaryViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { index, environment in
-            Section(id: Sections.main) {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.25))

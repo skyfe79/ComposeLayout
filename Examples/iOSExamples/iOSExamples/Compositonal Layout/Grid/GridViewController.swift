@@ -27,7 +27,7 @@ class GridViewController: UIViewController, Example {
 extension GridViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { index, environment in
-            Section(id: Sections.main) {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.2))

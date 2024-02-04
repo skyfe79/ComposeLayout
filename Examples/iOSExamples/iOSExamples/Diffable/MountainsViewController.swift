@@ -37,7 +37,7 @@ extension MountainsViewController {
             let contentSize = environment.container.effectiveContentSize
             let columns = contentSize.width > 800 ? 3 : 2
             let spacing = CGFloat(10)
-            Section(id: Sections.main) {
+            Section {
                 HGroup(repeatItems: columns) {
                     Item()
                         .width(.fractionalWidth(1.0))

@@ -53,7 +53,7 @@ extension AdaptiveSectionsViewController {
         ComposeLayout { index, environment in
             for section in SectionLayoutKind.allCases {
                 let columns = section.columnCount(for: environment.container.effectiveContentSize.width)
-                Section(id: section) {
+                Section {
                     HGroup(repeatItems: columns) {
                         Item()
                             .width(.fractionalWidth(0.2))

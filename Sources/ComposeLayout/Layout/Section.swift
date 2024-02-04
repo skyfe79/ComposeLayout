@@ -53,10 +53,9 @@ public struct Section {
     #if os(iOS)
     @available(iOS 14.0, *)
     public static func list(using configuration: UICollectionLayoutListConfiguration, layoutEnvironment: NSCollectionLayoutEnvironment) -> Section  {
-        Section(id: "test", type: SectionType.list(configuration: configuration, layoutEnvironment: layoutEnvironment)) {
-            HGroup {
-                
-            }
+        Section(type: SectionType.list(configuration: configuration, layoutEnvironment: layoutEnvironment)) {
+            // not used
+            HGroup {}
         }
     }
     #endif

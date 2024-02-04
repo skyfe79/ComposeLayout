@@ -110,7 +110,7 @@ class DevViewController: UIViewController {
 //    }()
     
     func testSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -122,7 +122,7 @@ class DevViewController: UIViewController {
     }
     
     func firstSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -148,7 +148,7 @@ class DevViewController: UIViewController {
     }
     
     func secondSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))

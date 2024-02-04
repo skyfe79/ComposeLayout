@@ -25,7 +25,7 @@ class OrthogonalScrollingViewController: UIViewController, Example {
 extension OrthogonalScrollingViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { index, environment in
-            Section(id: "sections") {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.7))

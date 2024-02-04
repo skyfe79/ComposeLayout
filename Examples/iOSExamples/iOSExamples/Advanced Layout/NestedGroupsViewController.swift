@@ -28,7 +28,7 @@ class NestedGroupsViewController: UIViewController, Example {
 extension NestedGroupsViewController {
     func createLayout() -> UICollectionViewLayout {
         ComposeLayout { index, environment in
-            Section(id: Sections.main) {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.7))

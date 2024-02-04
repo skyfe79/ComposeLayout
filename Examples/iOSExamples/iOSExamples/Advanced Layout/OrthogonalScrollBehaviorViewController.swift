@@ -57,7 +57,7 @@ extension OrthogonalScrollBehaviorViewController {
         return ComposeLayout { sectionIndex, environment in
             let sectionKind = SectionKind(rawValue: sectionIndex) ?? .none
             let orthogonallyScrolls = sectionKind.orthogonalScrollingBehavior != .none
-            Section(id: sectionIndex) {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.7))

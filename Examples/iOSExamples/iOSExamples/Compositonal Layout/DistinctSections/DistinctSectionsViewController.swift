@@ -52,7 +52,7 @@ extension DistinctSectionsViewController {
         ComposeLayout { index, environment in
             for section in SectionLayoutKind.allCases {
                 let columns = section.columnCount
-                Section(id: section) {
+                Section {
                     HGroup(repeatItems: columns) {
                         Item()
                             .width(.fractionalWidth(1.0))
