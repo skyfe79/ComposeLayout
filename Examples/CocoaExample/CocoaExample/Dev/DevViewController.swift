@@ -53,7 +53,7 @@ class MyBackgroundView3: NSView {
 class DevViewController: NSViewController {
     
     func firstSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup(repeatItems: 2) {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -65,7 +65,7 @@ class DevViewController: NSViewController {
     }
     
     func secondSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -88,7 +88,7 @@ class DevViewController: NSViewController {
     }
     
     func thirdSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -128,13 +128,13 @@ class DevViewController: NSViewController {
     lazy var layout: NSCollectionViewCompositionalLayout = {
         let config = NSCollectionViewCompositionalLayoutConfiguration()
         config.scrollDirection = .vertical
-        return ComposeLayout { environment in
+        return ComposeLayout { sectionIndex, environment in
             self.firstSection(environment: environment)
             self.secondSection(environment: environment)
             self.thirdSection(environment: environment)
         }
         .register(MyBackgroundView.self, forDecorationViewOfKind: "blue-background")
-        .configuration(config)
+        .using(configuration: config)
         .build()
     }()
     

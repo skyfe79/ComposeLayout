@@ -27,8 +27,8 @@ class InsetItemsGridViewController: NSViewController {
 
 extension InsetItemsGridViewController {
     private func createLayout() -> NSCollectionViewCompositionalLayout {
-        ComposeLayout { environment in
-            Section(id: Sections.main) {
+        ComposeLayout { sectionIndex, environment in
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.2))

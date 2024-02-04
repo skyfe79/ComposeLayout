@@ -28,8 +28,8 @@ class TwoColumnsGridViewController: NSViewController {
 
 extension TwoColumnsGridViewController {
     private func createLayout() -> NSCollectionViewLayout {
-        ComposeLayout { environment in
-            Section(id: Sections.main) {
+        ComposeLayout { sectionIndex, environment in
+            Section {
                 HGroup(repeatItems: 2) {
                     Item()
                         .width(.fractionalWidth(1.0))

@@ -29,9 +29,9 @@ class SectionHeaderFooterViewController: NSViewController {
 
 extension SectionHeaderFooterViewController {
     private func createLayout() -> NSCollectionViewLayout {
-        return ComposeLayout { environment in
+        return ComposeLayout { sectionIndex, environment in
             let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
-            Section(id: Sections.shared) {
+            Section {
                 HGroup {
                     Item(width: .fractionalWidth(1.0), height: .fractionalHeight(1.0))
                 }

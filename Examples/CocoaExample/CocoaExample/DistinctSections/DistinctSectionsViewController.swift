@@ -40,21 +40,20 @@ class DistinctSectionsViewController: NSViewController {
 
 extension DistinctSectionsViewController {
     private func createLayout() -> NSCollectionViewLayout {
-        ComposeLayout { environment in
-            for section in SectionLayoutKind.allCases {
-                let columns = section.columnCount
-                Section(id: section) {
-                    HGroup(repeatItems: columns) {
-                        Item()
-                            .width(.fractionalWidth(1.0))
-                            .height(.fractionalHeight(1.0))
-                            .contentInsets(leading: 2, top: 2, trailing: 2, bottom: 2)
-                    }
-                    .height(columns == 1 ? .absolute(44) : .fractionalWidth(0.2))
-                    .width(.fractionalWidth(1.0))
+        ComposeLayout { sectionIndex, environment in
+            let section = SectionLayoutKind.allCases[sectionIndex]
+            let columns = section.columnCount
+            Section {
+                HGroup(repeatItems: columns) {
+                    Item()
+                        .width(.fractionalWidth(1.0))
+                        .height(.fractionalHeight(1.0))
+                        .contentInsets(leading: 2, top: 2, trailing: 2, bottom: 2)
                 }
-                .contentInsets(leading: 20, top: 20, trailing: 20, bottom: 20)
+                .height(columns == 1 ? .absolute(44) : .fractionalWidth(0.2))
+                .width(.fractionalWidth(1.0))
             }
+            .contentInsets(leading: 20, top: 20, trailing: 20, bottom: 20)
         }
         .build()
     }
