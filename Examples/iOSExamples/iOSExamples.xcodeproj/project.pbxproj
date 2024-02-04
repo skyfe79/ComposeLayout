@@ -31,6 +31,7 @@
 		0384ECE62B6A142E00411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE52B6A142E00411E02 /* Assets.xcassets */; };
 		0384ECE92B6A142E00411E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ECE72B6A142E00411E02 /* LaunchScreen.storyboard */; };
 		0384ECF32B6A1CB600411E02 /* ComposeLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 0384ECF22B6A1CB600411E02 /* ComposeLayout */; };
+		039D6B562B6F2B3D001D5729 /* OrthogonalScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B552B6F2B3D001D5729 /* OrthogonalScrollingViewController.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -65,6 +66,7 @@
 		0384ECE82B6A142E00411E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0384ECEA2B6A142E00411E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0384ECF02B6A149C00411E02 /* ComposeLayout */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ComposeLayout; path = ../..; sourceTree = "<group>"; };
+		039D6B552B6F2B3D001D5729 /* OrthogonalScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalScrollingViewController.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */,
 				03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */,
 				03D0C5702B6E29AD0059E744 /* NestedGroupsViewController.swift */,
+				039D6B552B6F2B3D001D5729 /* OrthogonalScrollingViewController.swift */,
 			);
 			path = "Advanced Layout";
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */,
 				031519C02B6D2A1800F17A15 /* BadgeModel.swift in Sources */,
 				031519BE2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift in Sources */,
+				039D6B562B6F2B3D001D5729 /* OrthogonalScrollingViewController.swift in Sources */,
 				031519C32B6D2AC800F17A15 /* BadgeSupplementaryView.swift in Sources */,
 				031519A72B6CEBFF00F17A15 /* GridViewController.swift in Sources */,
 			);

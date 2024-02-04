@@ -38,6 +38,9 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
             ]),
             OutlineItem(title: "Section Background Decoration", viewController: SectionDecorationViewController.self),
             OutlineItem(title: "Nested Groups", viewController: NestedGroupsViewController.self),
+            OutlineItem(title: "Orthogonal Sections", subitems: [
+                OutlineItem(title: "Orthogonal Sections", viewController: OrthogonalScrollingViewController.self)
+            ])
         ])
     }()
     
