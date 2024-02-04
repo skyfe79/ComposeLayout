@@ -74,8 +74,8 @@ extension ListAppearancesViewController {
 
 extension ListAppearancesViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { sectionIndex, environment in
-            var config = UICollectionLayoutListConfiguration(appearance: self.appearance)
+        ComposeLayout { [unowned self] sectionIndex, environment in
+            let config = UICollectionLayoutListConfiguration(appearance: self.appearance)
             Section.list(using: config, layoutEnvironment: environment)
         }
         .build()

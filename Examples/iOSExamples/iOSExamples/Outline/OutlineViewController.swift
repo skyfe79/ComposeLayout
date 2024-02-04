@@ -64,6 +64,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
             OutlineItem(title: "Simple List", viewController: SimpleListViewController.self),
             OutlineItem(title: "Reorderable List", viewController: ReorderableListViewController.self),
             OutlineItem(title: "List Appearances", viewController: ListAppearancesViewController.self),
+            OutlineItem(title: "List with Custom Cells", viewController: CustomCellListViewController.self)
         ])
     }()
     
