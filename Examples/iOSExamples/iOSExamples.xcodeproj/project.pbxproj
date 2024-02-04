@@ -55,6 +55,7 @@
 		039D6B952B6F76A1001D5729 /* EmojiExplorerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B942B6F76A1001D5729 /* EmojiExplorerListViewController.swift */; };
 		039D6B982B6FAC16001D5729 /* CustomConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B972B6FAC16001D5729 /* CustomConfigurationViewController.swift */; };
 		039D6B9A2B6FAC37001D5729 /* CustomConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B992B6FAC37001D5729 /* CustomConfigurations.swift */; };
+		039D6B9D2B6FB573001D5729 /* CustomVisibleItemsInvalidationHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B9C2B6FB573001D5729 /* CustomVisibleItemsInvalidationHandlerViewController.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -113,6 +114,7 @@
 		039D6B942B6F76A1001D5729 /* EmojiExplorerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiExplorerListViewController.swift; sourceTree = "<group>"; };
 		039D6B972B6FAC16001D5729 /* CustomConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConfigurationViewController.swift; sourceTree = "<group>"; };
 		039D6B992B6FAC37001D5729 /* CustomConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomConfigurations.swift; sourceTree = "<group>"; };
+		039D6B9C2B6FB573001D5729 /* CustomVisibleItemsInvalidationHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVisibleItemsInvalidationHandlerViewController.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				039D6B7D2B6F5A93001D5729 /* Lists */,
 				039D6B8E2B6F709F001D5729 /* Emoji */,
 				039D6B962B6FABF8001D5729 /* Cell Configurations */,
+				039D6B9B2B6FB541001D5729 /* CustomVisibleItemsInvalidationHandler */,
 				031519972B6C7D8100F17A15 /* DevViewController.swift */,
 				0384ECDC2B6A142D00411E02 /* AppDelegate.swift */,
 				0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */,
@@ -385,6 +388,14 @@
 			path = "Cell Configurations";
 			sourceTree = "<group>";
 		};
+		039D6B9B2B6FB541001D5729 /* CustomVisibleItemsInvalidationHandler */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B9C2B6FB573001D5729 /* CustomVisibleItemsInvalidationHandlerViewController.swift */,
+			);
+			path = CustomVisibleItemsInvalidationHandler;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -459,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039D6B9D2B6FB573001D5729 /* CustomVisibleItemsInvalidationHandlerViewController.swift in Sources */,
 				039D6B642B6F3899001D5729 /* ConferenceNewsFeedCell.swift in Sources */,
 				039D6B902B6F70C5001D5729 /* EmojiExplorerViewController.swift in Sources */,
 				039D6B852B6F5DBF001D5729 /* ListAppearancesViewController.swift in Sources */,
