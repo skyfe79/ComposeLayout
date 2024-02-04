@@ -53,6 +53,8 @@
 		039D6B902B6F70C5001D5729 /* EmojiExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B8F2B6F70C4001D5729 /* EmojiExplorerViewController.swift */; };
 		039D6B932B6F758A001D5729 /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B922B6F758A001D5729 /* EmojiDetailViewController.swift */; };
 		039D6B952B6F76A1001D5729 /* EmojiExplorerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B942B6F76A1001D5729 /* EmojiExplorerListViewController.swift */; };
+		039D6B982B6FAC16001D5729 /* CustomConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B972B6FAC16001D5729 /* CustomConfigurationViewController.swift */; };
+		039D6B9A2B6FAC37001D5729 /* CustomConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B992B6FAC37001D5729 /* CustomConfigurations.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -109,6 +111,8 @@
 		039D6B8F2B6F70C4001D5729 /* EmojiExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiExplorerViewController.swift; sourceTree = "<group>"; };
 		039D6B922B6F758A001D5729 /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 		039D6B942B6F76A1001D5729 /* EmojiExplorerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiExplorerListViewController.swift; sourceTree = "<group>"; };
+		039D6B972B6FAC16001D5729 /* CustomConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomConfigurationViewController.swift; sourceTree = "<group>"; };
+		039D6B992B6FAC37001D5729 /* CustomConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomConfigurations.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 				039D6B672B6F509C001D5729 /* Diffable */,
 				039D6B7D2B6F5A93001D5729 /* Lists */,
 				039D6B8E2B6F709F001D5729 /* Emoji */,
+				039D6B962B6FABF8001D5729 /* Cell Configurations */,
 				031519972B6C7D8100F17A15 /* DevViewController.swift */,
 				0384ECDC2B6A142D00411E02 /* AppDelegate.swift */,
 				0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */,
@@ -371,6 +376,15 @@
 			path = Emoji;
 			sourceTree = "<group>";
 		};
+		039D6B962B6FABF8001D5729 /* Cell Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B992B6FAC37001D5729 /* CustomConfigurations.swift */,
+				039D6B972B6FAC16001D5729 /* CustomConfigurationViewController.swift */,
+			);
+			path = "Cell Configurations";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -450,6 +464,7 @@
 				039D6B852B6F5DBF001D5729 /* ListAppearancesViewController.swift in Sources */,
 				03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */,
 				031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */,
+				039D6B9A2B6FAC37001D5729 /* CustomConfigurations.swift in Sources */,
 				031519982B6C7D8100F17A15 /* DevViewController.swift in Sources */,
 				03D0C5712B6E29AD0059E744 /* NestedGroupsViewController.swift in Sources */,
 				031519C52B6D2CB700F17A15 /* SectionHeadersFootersViewController.swift in Sources */,
@@ -465,6 +480,7 @@
 				031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */,
 				039D6B932B6F758A001D5729 /* EmojiDetailViewController.swift in Sources */,
 				039D6B812B6F5BB3001D5729 /* ReorderableListViewController.swift in Sources */,
+				039D6B982B6FAC16001D5729 /* CustomConfigurationViewController.swift in Sources */,
 				039D6B602B6F37BF001D5729 /* ConferenceNewsController.swift in Sources */,
 				039D6B832B6F5BED001D5729 /* Emoji.swift in Sources */,
 				031519962B6C7D4600F17A15 /* OutlineViewController.swift in Sources */,
