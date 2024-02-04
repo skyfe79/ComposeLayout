@@ -50,6 +50,8 @@
 		039D6B832B6F5BED001D5729 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B822B6F5BED001D5729 /* Emoji.swift */; };
 		039D6B852B6F5DBF001D5729 /* ListAppearancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B842B6F5DBF001D5729 /* ListAppearancesViewController.swift */; };
 		039D6B8D2B6F6DFA001D5729 /* CustomCellListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B8C2B6F6DFA001D5729 /* CustomCellListViewController.swift */; };
+		039D6B902B6F70C5001D5729 /* EmojiExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B8F2B6F70C4001D5729 /* EmojiExplorerViewController.swift */; };
+		039D6B932B6F758A001D5729 /* EmojiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B922B6F758A001D5729 /* EmojiDetailViewController.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -103,6 +105,8 @@
 		039D6B822B6F5BED001D5729 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		039D6B842B6F5DBF001D5729 /* ListAppearancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppearancesViewController.swift; sourceTree = "<group>"; };
 		039D6B8C2B6F6DFA001D5729 /* CustomCellListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellListViewController.swift; sourceTree = "<group>"; };
+		039D6B8F2B6F70C4001D5729 /* EmojiExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiExplorerViewController.swift; sourceTree = "<group>"; };
+		039D6B922B6F758A001D5729 /* EmojiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiDetailViewController.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 				039D6B592B6F375F001D5729 /* Conference App Layouts */,
 				039D6B672B6F509C001D5729 /* Diffable */,
 				039D6B7D2B6F5A93001D5729 /* Lists */,
+				039D6B8E2B6F709F001D5729 /* Emoji */,
 				031519972B6C7D8100F17A15 /* DevViewController.swift */,
 				0384ECDC2B6A142D00411E02 /* AppDelegate.swift */,
 				0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */,
@@ -354,6 +359,15 @@
 			path = Lists;
 			sourceTree = "<group>";
 		};
+		039D6B8E2B6F709F001D5729 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B8F2B6F70C4001D5729 /* EmojiExplorerViewController.swift */,
+				039D6B922B6F758A001D5729 /* EmojiDetailViewController.swift */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				039D6B642B6F3899001D5729 /* ConferenceNewsFeedCell.swift in Sources */,
+				039D6B902B6F70C5001D5729 /* EmojiExplorerViewController.swift in Sources */,
 				039D6B852B6F5DBF001D5729 /* ListAppearancesViewController.swift in Sources */,
 				03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */,
 				031519AA2B6CED4300F17A15 /* TextCell.swift in Sources */,
@@ -445,6 +460,7 @@
 				039D6B622B6F388C001D5729 /* ConferenceVideoCell.swift in Sources */,
 				039D6B7F2B6F5AA3001D5729 /* SimpleListViewController.swift in Sources */,
 				031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */,
+				039D6B932B6F758A001D5729 /* EmojiDetailViewController.swift in Sources */,
 				039D6B812B6F5BB3001D5729 /* ReorderableListViewController.swift in Sources */,
 				039D6B602B6F37BF001D5729 /* ConferenceNewsController.swift in Sources */,
 				039D6B832B6F5BED001D5729 /* Emoji.swift in Sources */,

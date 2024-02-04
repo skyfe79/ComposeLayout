@@ -68,6 +68,13 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
         ])
     }()
     
+    private lazy var outlines: OutlineItem = {
+        OutlineItem(title: "Emoji", subitems: [
+            OutlineItem(title: "Emoji Explorer", viewController: EmojiExplorerViewController.self),
+//            OutlineItem(title: "Emoji Explorer - List", viewController: EmojiExplorerListViewController.self)
+        ])
+    }()
+    
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "Compositional Layout", subitems: [
@@ -77,6 +84,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
             ]),
             self.diffableDataSource,
             self.listsLayout,
+            self.outlines,
             OutlineItem(title: "Development", subitems: [
                 OutlineItem(title: "Testbed", viewController: DevViewController.self)
             ])
