@@ -71,7 +71,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
     private lazy var outlines: OutlineItem = {
         OutlineItem(title: "Emoji", subitems: [
             OutlineItem(title: "Emoji Explorer", viewController: EmojiExplorerViewController.self),
-//            OutlineItem(title: "Emoji Explorer - List", viewController: EmojiExplorerListViewController.self)
+            OutlineItem(title: "Emoji Explorer - List", viewController: EmojiExplorerListViewController.self)
         ])
     }()
     
