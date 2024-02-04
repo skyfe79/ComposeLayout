@@ -39,6 +39,10 @@
 		039D6B622B6F388C001D5729 /* ConferenceVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B612B6F388C001D5729 /* ConferenceVideoCell.swift */; };
 		039D6B642B6F3899001D5729 /* ConferenceNewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B632B6F3899001D5729 /* ConferenceNewsFeedCell.swift */; };
 		039D6B662B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B652B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift */; };
+		039D6B692B6F50AC001D5729 /* MountainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B682B6F50AC001D5729 /* MountainsViewController.swift */; };
+		039D6B6C2B6F50F2001D5729 /* MountainsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B6B2B6F50F2001D5729 /* MountainsController.swift */; };
+		039D6B702B6F5116001D5729 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B6F2B6F5116001D5729 /* LabelCell.swift */; };
+		039D6B722B6F513C001D5729 /* MountainsRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B712B6F513C001D5729 /* MountainsRawData.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -81,6 +85,10 @@
 		039D6B612B6F388C001D5729 /* ConferenceVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceVideoCell.swift; sourceTree = "<group>"; };
 		039D6B632B6F3899001D5729 /* ConferenceNewsFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceNewsFeedCell.swift; sourceTree = "<group>"; };
 		039D6B652B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceNewsFeedViewController.swift; sourceTree = "<group>"; };
+		039D6B682B6F50AC001D5729 /* MountainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsViewController.swift; sourceTree = "<group>"; };
+		039D6B6B2B6F50F2001D5729 /* MountainsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainsController.swift; sourceTree = "<group>"; };
+		039D6B6F2B6F5116001D5729 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		039D6B712B6F513C001D5729 /* MountainsRawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainsRawData.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +252,7 @@
 				031519A42B6CEBB200F17A15 /* Compositonal Layout */,
 				031519BC2B6D299700F17A15 /* Advanced Layout */,
 				039D6B592B6F375F001D5729 /* Conference App Layouts */,
+				039D6B672B6F509C001D5729 /* Diffable */,
 				031519972B6C7D8100F17A15 /* DevViewController.swift */,
 				0384ECDC2B6A142D00411E02 /* AppDelegate.swift */,
 				0384ECDE2B6A142D00411E02 /* SceneDelegate.swift */,
@@ -279,6 +288,41 @@
 				039D6B5F2B6F37BF001D5729 /* ConferenceNewsController.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		039D6B672B6F509C001D5729 /* Diffable */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B6E2B6F5104001D5729 /* Cells And Supplementary Views */,
+				039D6B6D2B6F50F6001D5729 /* Models */,
+				039D6B6A2B6F50E1001D5729 /* ModelController */,
+				039D6B682B6F50AC001D5729 /* MountainsViewController.swift */,
+			);
+			path = Diffable;
+			sourceTree = "<group>";
+		};
+		039D6B6A2B6F50E1001D5729 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B6B2B6F50F2001D5729 /* MountainsController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		039D6B6D2B6F50F6001D5729 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B712B6F513C001D5729 /* MountainsRawData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		039D6B6E2B6F5104001D5729 /* Cells And Supplementary Views */ = {
+			isa = PBXGroup;
+			children = (
+				039D6B6F2B6F5116001D5729 /* LabelCell.swift */,
+			);
+			path = "Cells And Supplementary Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,10 +428,14 @@
 				031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */,
 				031519C02B6D2A1800F17A15 /* BadgeModel.swift in Sources */,
 				031519BE2B6D29CA00F17A15 /* ItemBadgeSupplementaryViewController.swift in Sources */,
+				039D6B692B6F50AC001D5729 /* MountainsViewController.swift in Sources */,
 				039D6B562B6F2B3D001D5729 /* OrthogonalScrollingViewController.swift in Sources */,
 				031519C32B6D2AC800F17A15 /* BadgeSupplementaryView.swift in Sources */,
 				031519A72B6CEBFF00F17A15 /* GridViewController.swift in Sources */,
+				039D6B722B6F513C001D5729 /* MountainsRawData.swift in Sources */,
 				039D6B5B2B6F3778001D5729 /* ConferenceVideoSessionsViewController.swift in Sources */,
+				039D6B702B6F5116001D5729 /* LabelCell.swift in Sources */,
+				039D6B6C2B6F50F2001D5729 /* MountainsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,6 +52,12 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
         ])
     }()
     
+    private lazy var diffableDataSource: OutlineItem = {
+        OutlineItem(title: "Diffable Data Source", subitems: [
+            OutlineItem(title: "Mountains Search", viewController: MountainsViewController.self)
+        ])
+    }()
+    
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "Compositional Layout", subitems: [
@@ -59,7 +65,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
                 self.advancedLayouts,
                 self.conferenceAppLayouts
             ]),
-            
+            self.diffableDataSource,
             OutlineItem(title: "Development", subitems: [
                 OutlineItem(title: "Testbed", viewController: DevViewController.self)
             ])
