@@ -81,6 +81,18 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
         ])
     }()
     
+    private lazy var customVisibleItemsInvalidateHandler: OutlineItem = {
+        OutlineItem(title: "Visible Items Invalidate Handler", subitems: [
+            OutlineItem(title: "Custom Effect", viewController: CustomVisibleItemsInvalidationHandlerViewController.self)
+        ])
+    }()
+    
+    private lazy var development: OutlineItem = {
+        OutlineItem(title: "Development", subitems: [
+            OutlineItem(title: "Testbed", viewController: DevViewController.self)
+        ])
+    }()
+    
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "Compositional Layout", subitems: [
@@ -92,9 +104,8 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
             self.listsLayout,
             self.outlines,
             self.cellConfiguration,
-            OutlineItem(title: "Development", subitems: [
-                OutlineItem(title: "Testbed", viewController: DevViewController.self)
-            ])
+            self.customVisibleItemsInvalidateHandler,
+            self.development
         ]
     }()
 

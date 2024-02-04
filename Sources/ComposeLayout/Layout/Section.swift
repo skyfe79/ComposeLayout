@@ -25,13 +25,14 @@ public struct Section {
     
     private let type: Any?
     public var rootGroup: NSCollectionLayoutGroupConvertible
-    private var orthogonalScrollingBehavior: PlatformCollectionLayoutSectionOrthogonalScrollingBehavior?
-    private var interGroupSpacing: CGFloat = 0.0
-    private var contentInsets: NSDirectionalEdgeInsets?
-    private var contentInsetsReference: Any?
-    private var supplementaryContentInsetsReference: Any?
-    internal var boundarySupplementaryItems: [BoundarySupplementaryItem]?
-    internal var decorationItems: [DecorationItem]?
+    public var orthogonalScrollingBehavior: PlatformCollectionLayoutSectionOrthogonalScrollingBehavior?
+    public var interGroupSpacing: CGFloat = 0.0
+    public var contentInsets: NSDirectionalEdgeInsets?
+    public var contentInsetsReference: Any?
+    public var supplementaryContentInsetsReference: Any?
+    public var boundarySupplementaryItems: [BoundarySupplementaryItem]?
+    public var decorationItems: [DecorationItem]?
+    public var visibleItemsInvalidationHandler: NSCollectionLayoutSectionVisibleItemsInvalidationHandler?
     
     private init(type: Any?, @SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) {
         self.type = type
@@ -80,6 +81,9 @@ extension Section: NSCollectionLayoutSectionConvertible, NSCollectionLayoutSecti
         }
         if let decorationItems {
             section.decorationItems = decorationItems.compactMap { $0.toNSCollectionLayoutDecorationItem() }
+        }
+        if let visibleItemsInvalidationHandler {
+            section.visibleItemsInvalidationHandler = visibleItemsInvalidationHandler
         }
         
         #if os(iOS)
@@ -174,5 +178,12 @@ extension Section {
     
     public func decorationItems(@DecorationItemBuilder decorationItems: () -> [DecorationItem]) -> Section {
         return mutable(self) { $0.decorationItems = decorationItems() }
+    }
+}
+
+// MARK: - visibleItemsInvalidationHandler
+extension Section {
+    public func visibleItemsInvalidationHandler(_ handler: @escaping NSCollectionLayoutSectionVisibleItemsInvalidationHandler) -> Section {
+        return mutable(self) { $0.visibleItemsInvalidationHandler = handler }
     }
 }
