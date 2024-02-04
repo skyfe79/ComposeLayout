@@ -45,11 +45,18 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
         ])
     }()
     
+    private lazy var conferenceAppLayouts: OutlineItem = {
+        OutlineItem(title: "Conference App", subitems: [
+            OutlineItem(title: "Videos", viewController: ConferenceVideoSessionsViewController.self)
+        ])
+    }()
+    
     private lazy var menuItems: [OutlineItem] = {
         return [
             OutlineItem(title: "Compositional Layout", subitems: [
                 self.gettingStarted,
-                self.advancedLayouts
+                self.advancedLayouts,
+                self.conferenceAppLayouts
             ]),
             
             OutlineItem(title: "Development", subitems: [
