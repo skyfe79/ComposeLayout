@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-The data model of the Emoji Explorer examples
-*/
-
 import UIKit
 
 struct Emoji: Hashable {

@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-A generic header view that has an NSTextField
-*/
-
 import Cocoa
 
 class TitleSupplementaryView: NSView, NSCollectionViewElement {

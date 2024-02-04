@@ -2,7 +2,7 @@
 //  ConferenceVideoController.swift
 //  iOSExamples
 //
-//  Created by codingmax on 2024/02/04.
+//  Created by Sungcheol Kim on 2024/02/04.
 //
 
 import Foundation

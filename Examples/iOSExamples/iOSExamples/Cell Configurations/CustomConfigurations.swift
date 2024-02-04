@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-Examples of custom configurations that can be used with any cell.
-*/
-
 import UIKit
 
 struct CustomBackgroundConfiguration {

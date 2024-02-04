@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-A detail view controller to visualize a selected emoji.
-*/
-
 import UIKit
 
 class EmojiDetailViewController: UIViewController {

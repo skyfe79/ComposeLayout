@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-`InsertionSortArray` provides a self sorting array class
-*/
-
 import UIKit
 
 class InsertionSortArray: Hashable {

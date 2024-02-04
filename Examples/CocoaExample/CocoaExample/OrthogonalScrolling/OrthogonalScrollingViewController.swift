@@ -2,7 +2,7 @@
 //  OrthogonalScrollingViewController.swift
 //  CocoaExample
 //
-//  Created by codingmax on 2024/02/01.
+//  Created by Sungcheol Kim on 2024/02/01.
 //
 
 import Cocoa

@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-Controller object that manages our Mountains and allows for searches
-*/
-
 import Foundation
 
 let mountainsRawData = """

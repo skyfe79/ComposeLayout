@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-Cell for displaying the news item
-*/
-
 import UIKit
 
 class ConferenceNewsFeedCell: UICollectionViewCell {

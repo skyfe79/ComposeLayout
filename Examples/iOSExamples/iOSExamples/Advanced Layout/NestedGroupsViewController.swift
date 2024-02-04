@@ -2,7 +2,7 @@
 //  NestedGroupsViewController.swift
 //  iOSExamples
 //
-//  Created by codingmax on 2024/02/03.
+//  Created by Sungcheol Kim on 2024/02/03.
 //
 
 import UIKit

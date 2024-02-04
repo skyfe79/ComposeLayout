@@ -1,10 +1,3 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-Generic label cell
-*/
-
 import UIKit
 
 class LabelCell: UICollectionViewCell {
@@ -33,6 +26,6 @@ extension LabelCell {
             label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: inset),
             label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -inset),
             label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-            ])
+        ])
     }
 }
