@@ -13,7 +13,7 @@ import UIKit
 import AppKit
 #endif
 
-public struct Section: Hashable {
+public struct Section {
 
     #if os(iOS)
     @available(iOS 14.0, *)
@@ -23,17 +23,7 @@ public struct Section: Hashable {
     }
     #endif
     
-    public static func == (lhs: Section, rhs: Section) -> Bool {
-        return lhs.id == rhs.id
-    }
-        
-    /// only use id for hasing and equals comparing
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
     private let type: Any?
-    private let id: AnyHashable
     public var rootGroup: NSCollectionLayoutGroupConvertible
     private var orthogonalScrollingBehavior: PlatformCollectionLayoutSectionOrthogonalScrollingBehavior?
     private var interGroupSpacing: CGFloat = 0.0
@@ -43,21 +33,20 @@ public struct Section: Hashable {
     internal var boundarySupplementaryItems: [BoundarySupplementaryItem]?
     internal var decorationItems: [DecorationItem]?
     
-    private init<ID>(id: ID, type: Any?, @SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) where ID: Hashable {
-        self.id = id
+    private init(type: Any?, @SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) {
         self.type = type
         self.rootGroup = rootGroup()
     }
     
-    public init<ID>(id: ID, @SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) where ID: Hashable {
+    public init(@SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) {
         #if os(iOS)
             if #available(iOS 14.0, *) {
-                self.init(id: id, type: SectionType.normal, rootGroup: rootGroup)
+                self.init(type: SectionType.normal, rootGroup: rootGroup)
             } else {
-                self.init(id: id, type: nil, rootGroup: rootGroup)
+                self.init(type: nil, rootGroup: rootGroup)
             }
         #else
-            self.init(type: nil, rootGroup: rootGroup)
+        self.init(type: nil, rootGroup: rootGroup)
         #endif
     }
     

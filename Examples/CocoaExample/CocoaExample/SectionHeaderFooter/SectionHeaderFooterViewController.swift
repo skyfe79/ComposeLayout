@@ -44,6 +44,7 @@ extension SectionHeaderFooterViewController {
                 BoundarySupplementaryItem(elementKind: Self.sectionHeaderElementKind)
                     .size(headerFooterSize)
                     .alignment(.top)
+                    .pinToVisibleBounds(true)
                 BoundarySupplementaryItem(elementKind: Self.sectionFooterElementKind)
                     .size(headerFooterSize)
                     .alignment(.bottom)
