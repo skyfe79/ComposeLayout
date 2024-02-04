@@ -27,7 +27,7 @@ class TwoColumnViewController: UIViewController, Example {
 
 extension TwoColumnViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             Section(id: Sections.main) {
                 HGroup(repeatItems: 2) {
                     Item()

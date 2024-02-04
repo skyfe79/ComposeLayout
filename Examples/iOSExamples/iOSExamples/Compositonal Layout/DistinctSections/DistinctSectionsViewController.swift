@@ -49,7 +49,7 @@ extension DistinctSectionsViewController: UICollectionViewDelegate {
 
 extension DistinctSectionsViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             for section in SectionLayoutKind.allCases {
                 let columns = section.columnCount
                 Section(id: section) {

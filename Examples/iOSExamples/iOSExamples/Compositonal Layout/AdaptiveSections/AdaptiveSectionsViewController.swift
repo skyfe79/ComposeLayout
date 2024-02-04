@@ -50,7 +50,7 @@ extension AdaptiveSectionsViewController: UICollectionViewDelegate {
 
 extension AdaptiveSectionsViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             for section in SectionLayoutKind.allCases {
                 let columns = section.columnCount(for: environment.container.effectiveContentSize.width)
                 Section(id: section) {

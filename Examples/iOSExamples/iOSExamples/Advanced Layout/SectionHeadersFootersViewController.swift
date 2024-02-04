@@ -34,7 +34,7 @@ extension SectionHeadersFootersViewController: UICollectionViewDelegate {
 
 extension SectionHeadersFootersViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             let headerFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
             Section(id: "main") {
                 HGroup {

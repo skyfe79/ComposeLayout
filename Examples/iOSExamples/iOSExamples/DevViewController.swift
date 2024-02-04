@@ -193,7 +193,7 @@ class DevViewController: UIViewController {
     }
     
     lazy var layout:UICollectionViewCompositionalLayout = {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             self.testSection(environment: environment)
             self.firstSection(environment: environment)
             self.secondSection(environment: environment)

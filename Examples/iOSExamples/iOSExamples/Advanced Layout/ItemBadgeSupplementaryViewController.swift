@@ -29,7 +29,7 @@ class ItemBadgeSupplementaryViewController: UIViewController, Example {
 
 extension ItemBadgeSupplementaryViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             Section(id: Sections.main) {
                 HGroup {
                     Item()

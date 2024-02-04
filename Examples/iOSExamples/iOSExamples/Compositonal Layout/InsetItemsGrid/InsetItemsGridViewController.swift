@@ -27,7 +27,7 @@ class InsetItemsGridViewController: UIViewController, Example {
 
 extension InsetItemsGridViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             Section(id: Sections.main) {
                 HGroup {
                     Item()

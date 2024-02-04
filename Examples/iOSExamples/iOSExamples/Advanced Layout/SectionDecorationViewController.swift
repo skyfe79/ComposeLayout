@@ -35,7 +35,7 @@ extension SectionDecorationViewController: UICollectionViewDelegate {
 
 extension SectionDecorationViewController {
     func createLayout() -> UICollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             Section(id: "main") {
                 HGroup {
                     Item()
