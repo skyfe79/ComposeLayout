@@ -54,7 +54,8 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
     
     private lazy var diffableDataSource: OutlineItem = {
         OutlineItem(title: "Diffable Data Source", subitems: [
-            OutlineItem(title: "Mountains Search", viewController: MountainsViewController.self)
+            OutlineItem(title: "Mountains Search", viewController: MountainsViewController.self),
+            OutlineItem(title: "Insertion Sort Visualization", viewController: InsertionSortViewController.self)
         ])
     }()
     

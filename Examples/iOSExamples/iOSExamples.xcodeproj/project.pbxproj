@@ -43,6 +43,8 @@
 		039D6B6C2B6F50F2001D5729 /* MountainsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B6B2B6F50F2001D5729 /* MountainsController.swift */; };
 		039D6B702B6F5116001D5729 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B6F2B6F5116001D5729 /* LabelCell.swift */; };
 		039D6B722B6F513C001D5729 /* MountainsRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B712B6F513C001D5729 /* MountainsRawData.swift */; };
+		039D6B7A2B6F55E2001D5729 /* InsertionSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B792B6F55E2001D5729 /* InsertionSortViewController.swift */; };
+		039D6B7C2B6F562E001D5729 /* InsertionSortArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B7B2B6F562E001D5729 /* InsertionSortArray.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -89,6 +91,8 @@
 		039D6B6B2B6F50F2001D5729 /* MountainsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainsController.swift; sourceTree = "<group>"; };
 		039D6B6F2B6F5116001D5729 /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		039D6B712B6F513C001D5729 /* MountainsRawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MountainsRawData.swift; sourceTree = "<group>"; };
+		039D6B792B6F55E2001D5729 /* InsertionSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortViewController.swift; sourceTree = "<group>"; };
+		039D6B7B2B6F562E001D5729 /* InsertionSortArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSortArray.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 				039D6B6D2B6F50F6001D5729 /* Models */,
 				039D6B6A2B6F50E1001D5729 /* ModelController */,
 				039D6B682B6F50AC001D5729 /* MountainsViewController.swift */,
+				039D6B792B6F55E2001D5729 /* InsertionSortViewController.swift */,
 			);
 			path = Diffable;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 		039D6B6D2B6F50F6001D5729 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				039D6B7B2B6F562E001D5729 /* InsertionSortArray.swift */,
 				039D6B712B6F513C001D5729 /* MountainsRawData.swift */,
 			);
 			path = Models;
@@ -409,6 +415,7 @@
 				0315199E2B6C7FEF00F17A15 /* CollectionViewProvider.swift in Sources */,
 				031519B82B6D1F6F00F17A15 /* ListCell.swift in Sources */,
 				039D6B5E2B6F37A4001D5729 /* ConferenceVideoController.swift in Sources */,
+				039D6B7A2B6F55E2001D5729 /* InsertionSortViewController.swift in Sources */,
 				031519BB2B6D274B00F17A15 /* AdaptiveSectionsViewController.swift in Sources */,
 				031519B02B6D16D200F17A15 /* TwoColumnViewController.swift in Sources */,
 				039D6B622B6F388C001D5729 /* ConferenceVideoCell.swift in Sources */,
@@ -416,6 +423,7 @@
 				039D6B602B6F37BF001D5729 /* ConferenceNewsController.swift in Sources */,
 				031519962B6C7D4600F17A15 /* OutlineViewController.swift in Sources */,
 				03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
+				039D6B7C2B6F562E001D5729 /* InsertionSortArray.swift in Sources */,
 				031519B62B6D1EB500F17A15 /* DistinctSectionsViewController.swift in Sources */,
 				0384ECDD2B6A142D00411E02 /* AppDelegate.swift in Sources */,
 				031519B32B6D18F600F17A15 /* InsetItemsGridViewController.swift in Sources */,
