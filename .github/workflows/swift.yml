@@ -13,6 +13,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
+    - uses: SwiftyLab/setup-swift@latest
     - uses: actions/checkout@v3
     - name: Build
       run: make build
