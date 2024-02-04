@@ -36,7 +36,8 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
                 OutlineItem(title: "Section Headers/Footers", viewController: SectionHeadersFootersViewController.self),
                 OutlineItem(title: "Pinned Section Headers", viewController: PinnedSectionHeaderFooterViewController.self)
             ]),
-            OutlineItem(title: "Section Background Decoration", viewController: SectionDecorationViewController.self)
+            OutlineItem(title: "Section Background Decoration", viewController: SectionDecorationViewController.self),
+            OutlineItem(title: "Nested Groups", viewController: NestedGroupsViewController.self),
         ])
     }()
     
