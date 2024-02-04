@@ -47,7 +47,8 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
     
     private lazy var conferenceAppLayouts: OutlineItem = {
         OutlineItem(title: "Conference App", subitems: [
-            OutlineItem(title: "Videos", viewController: ConferenceVideoSessionsViewController.self)
+            OutlineItem(title: "Videos", viewController: ConferenceVideoSessionsViewController.self),
+            OutlineItem(title: "News", viewController: ConferenceNewsFeedViewController.self)
         ])
     }()
     

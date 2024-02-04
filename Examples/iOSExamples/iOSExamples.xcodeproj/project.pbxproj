@@ -38,6 +38,7 @@
 		039D6B602B6F37BF001D5729 /* ConferenceNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B5F2B6F37BF001D5729 /* ConferenceNewsController.swift */; };
 		039D6B622B6F388C001D5729 /* ConferenceVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B612B6F388C001D5729 /* ConferenceVideoCell.swift */; };
 		039D6B642B6F3899001D5729 /* ConferenceNewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B632B6F3899001D5729 /* ConferenceNewsFeedCell.swift */; };
+		039D6B662B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B652B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -79,6 +80,7 @@
 		039D6B5F2B6F37BF001D5729 /* ConferenceNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceNewsController.swift; sourceTree = "<group>"; };
 		039D6B612B6F388C001D5729 /* ConferenceVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceVideoCell.swift; sourceTree = "<group>"; };
 		039D6B632B6F3899001D5729 /* ConferenceNewsFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferenceNewsFeedCell.swift; sourceTree = "<group>"; };
+		039D6B652B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceNewsFeedViewController.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			children = (
 				039D6B5C2B6F3789001D5729 /* ModelController */,
 				039D6B5A2B6F3778001D5729 /* ConferenceVideoSessionsViewController.swift */,
+				039D6B652B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift */,
 			);
 			path = "Conference App Layouts";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				039D6B582B6F2DB9001D5729 /* OrthogonalScrollBehaviorViewController.swift in Sources */,
 				03D0C56F2B6E28930059E744 /* SectionBackgroundDecorationView.swift in Sources */,
 				0384ECDF2B6A142D00411E02 /* SceneDelegate.swift in Sources */,
+				039D6B662B6F4E7E001D5729 /* ConferenceNewsFeedViewController.swift in Sources */,
 				0315199C2B6C7E6F00F17A15 /* OutlineItem.swift in Sources */,
 				031519A12B6C802F00F17A15 /* DiffableDataSourceProvider.swift in Sources */,
 				031519C02B6D2A1800F17A15 /* BadgeModel.swift in Sources */,
