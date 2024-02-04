@@ -46,6 +46,8 @@
 		039D6B7A2B6F55E2001D5729 /* InsertionSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B792B6F55E2001D5729 /* InsertionSortViewController.swift */; };
 		039D6B7C2B6F562E001D5729 /* InsertionSortArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B7B2B6F562E001D5729 /* InsertionSortArray.swift */; };
 		039D6B7F2B6F5AA3001D5729 /* SimpleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B7E2B6F5AA3001D5729 /* SimpleListViewController.swift */; };
+		039D6B812B6F5BB3001D5729 /* ReorderableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B802B6F5BB3001D5729 /* ReorderableListViewController.swift */; };
+		039D6B832B6F5BED001D5729 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039D6B822B6F5BED001D5729 /* Emoji.swift */; };
 		03D0C5692B6E1DD70059E744 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */; };
 		03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */; };
 		03D0C56D2B6E27440059E744 /* SectionDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */; };
@@ -95,6 +97,8 @@
 		039D6B792B6F55E2001D5729 /* InsertionSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortViewController.swift; sourceTree = "<group>"; };
 		039D6B7B2B6F562E001D5729 /* InsertionSortArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSortArray.swift; sourceTree = "<group>"; };
 		039D6B7E2B6F5AA3001D5729 /* SimpleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListViewController.swift; sourceTree = "<group>"; };
+		039D6B802B6F5BB3001D5729 /* ReorderableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderableListViewController.swift; sourceTree = "<group>"; };
+		039D6B822B6F5BED001D5729 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		03D0C5682B6E1DD70059E744 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 		03D0C56A2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		03D0C56C2B6E27440059E744 /* SectionDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDecorationViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 		031519C12B6D2A2200F17A15 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				039D6B822B6F5BED001D5729 /* Emoji.swift */,
 				0315199B2B6C7E6F00F17A15 /* OutlineItem.swift */,
 				031519BF2B6D2A1800F17A15 /* BadgeModel.swift */,
 			);
@@ -338,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				039D6B7E2B6F5AA3001D5729 /* SimpleListViewController.swift */,
+				039D6B802B6F5BB3001D5729 /* ReorderableListViewController.swift */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -432,7 +438,9 @@
 				039D6B622B6F388C001D5729 /* ConferenceVideoCell.swift in Sources */,
 				039D6B7F2B6F5AA3001D5729 /* SimpleListViewController.swift in Sources */,
 				031519AD2B6CEDF300F17A15 /* UIColor+Extension.swift in Sources */,
+				039D6B812B6F5BB3001D5729 /* ReorderableListViewController.swift in Sources */,
 				039D6B602B6F37BF001D5729 /* ConferenceNewsController.swift in Sources */,
+				039D6B832B6F5BED001D5729 /* Emoji.swift in Sources */,
 				031519962B6C7D4600F17A15 /* OutlineViewController.swift in Sources */,
 				03D0C56B2B6E21380059E744 /* PinnedSectionHeaderFooterViewController.swift in Sources */,
 				039D6B7C2B6F562E001D5729 /* InsertionSortArray.swift in Sources */,

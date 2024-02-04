@@ -62,6 +62,7 @@ class OutlineViewController: UIViewController, CollectionViewProvider, DiffableD
     private lazy var listsLayout: OutlineItem = {
         OutlineItem(title: "Lists", subitems: [
             OutlineItem(title: "Simple List", viewController: SimpleListViewController.self),
+            OutlineItem(title: "Reorderable List", viewController: ReorderableListViewController.self),
         ])
     }()
     
