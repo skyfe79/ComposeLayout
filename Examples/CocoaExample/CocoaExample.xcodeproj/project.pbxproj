@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,7 @@
 		0384ED012B6A755200411E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384ED002B6A755200411E02 /* AppDelegate.swift */; };
 		0384ED052B6A755300411E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED042B6A755300411E02 /* Assets.xcassets */; };
 		0384ED082B6A755300411E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0384ED062B6A755300411E02 /* Main.storyboard */; };
-		0384ED112B6A756E00411E02 /* ComposeLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 0384ED102B6A756E00411E02 /* ComposeLayout */; };
+		039D6B8A2B6F6640001D5729 /* ComposeLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 039D6B892B6F6640001D5729 /* ComposeLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +79,7 @@
 		0384ED042B6A755300411E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0384ED072B6A755300411E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0384ED092B6A755300411E02 /* CocoaExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CocoaExample.entitlements; sourceTree = "<group>"; };
+		039D6B8B2B6F66A0001D5729 /* ComposeLayout */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ComposeLayout; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0384ED112B6A756E00411E02 /* ComposeLayout in Frameworks */,
+				039D6B8A2B6F6640001D5729 /* ComposeLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +232,7 @@
 		0384ECF42B6A755200411E02 = {
 			isa = PBXGroup;
 			children = (
+				039D6B8B2B6F66A0001D5729 /* ComposeLayout */,
 				0384ECFF2B6A755200411E02 /* CocoaExample */,
 				0384ECFE2B6A755200411E02 /* Products */,
 			);
@@ -287,7 +289,7 @@
 			);
 			name = CocoaExample;
 			packageProductDependencies = (
-				0384ED102B6A756E00411E02 /* ComposeLayout */,
+				039D6B892B6F6640001D5729 /* ComposeLayout */,
 			);
 			productName = CocoaExample;
 			productReference = 0384ECFD2B6A755200411E02 /* CocoaExample.app */;
@@ -318,7 +320,6 @@
 			);
 			mainGroup = 0384ECF42B6A755200411E02;
 			packageReferences = (
-				0384ED0F2B6A756E00411E02 /* XCLocalSwiftPackageReference "../.." */,
 			);
 			productRefGroup = 0384ECFE2B6A755200411E02 /* Products */;
 			projectDirPath = "";
@@ -589,15 +590,8 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		0384ED0F2B6A756E00411E02 /* XCLocalSwiftPackageReference "../.." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../..;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		0384ED102B6A756E00411E02 /* ComposeLayout */ = {
+		039D6B892B6F6640001D5729 /* ComposeLayout */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ComposeLayout;
 		};

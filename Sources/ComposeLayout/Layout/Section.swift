@@ -13,17 +13,17 @@ import UIKit
 import AppKit
 #endif
 
-public struct Section: Hashable {
-    public static func == (lhs: Section, rhs: Section) -> Bool {
-        return lhs.id == rhs.id
+public struct Section {
+
+    #if os(iOS)
+    @available(iOS 14.0, *)
+    private enum SectionType {
+        case normal
+        case list(configuration: UICollectionLayoutListConfiguration, layoutEnvironment: NSCollectionLayoutEnvironment)
     }
+    #endif
     
-    /// only use id for hasing and equals comparing
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
-    private var id: AnyHashable
+    private let type: Any?
     public var rootGroup: NSCollectionLayoutGroupConvertible
     private var orthogonalScrollingBehavior: PlatformCollectionLayoutSectionOrthogonalScrollingBehavior?
     private var interGroupSpacing: CGFloat = 0.0
@@ -32,10 +32,33 @@ public struct Section: Hashable {
     private var supplementaryContentInsetsReference: Any?
     internal var boundarySupplementaryItems: [BoundarySupplementaryItem]?
     internal var decorationItems: [DecorationItem]?
-    public init<ID>(id: ID, @SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) where ID: Hashable {
-        self.id = id
+    
+    private init(type: Any?, @SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) {
+        self.type = type
         self.rootGroup = rootGroup()
     }
+    
+    public init(@SectionBuilder rootGroup: () -> NSCollectionLayoutGroupConvertible) {
+        #if os(iOS)
+            if #available(iOS 14.0, *) {
+                self.init(type: SectionType.normal, rootGroup: rootGroup)
+            } else {
+                self.init(type: nil, rootGroup: rootGroup)
+            }
+        #else
+        self.init(type: nil, rootGroup: rootGroup)
+        #endif
+    }
+    
+    #if os(iOS)
+    @available(iOS 14.0, *)
+    public static func list(using configuration: UICollectionLayoutListConfiguration, layoutEnvironment: NSCollectionLayoutEnvironment) -> Section  {
+        Section(type: SectionType.list(configuration: configuration, layoutEnvironment: layoutEnvironment)) {
+            // not used
+            HGroup {}
+        }
+    }
+    #endif
 }
 
 extension Section: NSCollectionLayoutSectionConvertible, NSCollectionLayoutSectionsConvertible {
@@ -43,7 +66,7 @@ extension Section: NSCollectionLayoutSectionConvertible, NSCollectionLayoutSecti
         return [self]
     }
     
-    public func toNSCollectionLayoutSection() -> NSCollectionLayoutSection {
+    private func normalSectionToNSCollectionLayoutSection() -> NSCollectionLayoutSection {
         let section = NSCollectionLayoutSection(group: rootGroup.toNSCollectionLayoutGroup())
         section.interGroupSpacing = interGroupSpacing
         if let orthogonalScrollingBehavior {
@@ -60,15 +83,39 @@ extension Section: NSCollectionLayoutSectionConvertible, NSCollectionLayoutSecti
         }
         
         #if os(iOS)
-            if #available(iOS 14.0, *), let contentInsetsReference = contentInsetsReference as? UIContentInsetsReference {
-                section.contentInsetsReference = contentInsetsReference
-            }
-            if #available(iOS 16.0, *), let supplementaryContentInsetsReference = supplementaryContentInsetsReference as? UIContentInsetsReference {
-                section.supplementaryContentInsetsReference = supplementaryContentInsetsReference
-            }
+        if #available(iOS 14.0, *), let contentInsetsReference = contentInsetsReference as? UIContentInsetsReference {
+            section.contentInsetsReference = contentInsetsReference
+        }
+        if #available(iOS 16.0, *), let supplementaryContentInsetsReference = supplementaryContentInsetsReference as? UIContentInsetsReference {
+            section.supplementaryContentInsetsReference = supplementaryContentInsetsReference
+        }
         #endif
         
         return section
+    }
+
+    #if os(iOS)
+    @available(iOS 14.0, *)
+    private func listSectionToNSCollectionLayoutSection(using configuration: UICollectionLayoutListConfiguration, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection {
+        return NSCollectionLayoutSection.list(using: configuration, layoutEnvironment: layoutEnvironment)
+    }
+    #endif
+    
+    public func toNSCollectionLayoutSection() -> NSCollectionLayoutSection {
+        #if os(iOS)
+        if #available(iOS 14.0, *), let sectionType = type as? SectionType {
+            switch sectionType {
+            case .normal:
+                return normalSectionToNSCollectionLayoutSection()
+            case .list(let configuration, let layoutEnvironment):
+                return listSectionToNSCollectionLayoutSection(using: configuration, layoutEnvironment: layoutEnvironment)
+            }
+        } else {
+            return normalSectionToNSCollectionLayoutSection()
+        }
+        #else
+        return normalSectionToNSCollectionLayoutSection()
+        #endif
     }
     
     public func toNSCollectionLayoutSections() -> [NSCollectionLayoutSection] {

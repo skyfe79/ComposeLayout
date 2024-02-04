@@ -2,7 +2,7 @@
 //  AdaptiveSectionsViewController.swift
 //  CocoaExample
 //
-//  Created by codingmax on 2024/02/01.
+//  Created by Sungcheol Kim on 2024/02/01.
 //
 
 import Cocoa
@@ -43,10 +43,10 @@ class AdaptiveSectionsViewController: NSViewController {
 
 extension AdaptiveSectionsViewController {
     private func createLayout() -> NSCollectionViewLayout {
-        ComposeLayout { environment in
+        ComposeLayout { sectionIndex, environment in
             for section in SectionLayoutKind.allCases {
                 let columns = section.columnCount(for: environment.container.effectiveContentSize.width)
-                Section(id: section) {
+                Section {
                     HGroup(repeatItems: columns) {
                         Item()
                             .width(.fractionalWidth(0.2))

@@ -8,11 +8,11 @@ import AppKit
 
 public struct ComposeLayout {
     @SectionBuilder
-    private var layoutBuilder: (_ environment: NSCollectionLayoutEnvironment) -> ComposeLayoutModel
+    private var layoutBuilder: (_ sectionIndex: Int, _ environment: NSCollectionLayoutEnvironment) -> ComposeLayoutModel
     private var configuration: PlatformCompositionalLayoutConfiguration?
     private var decorationViewClasses: [String: AnyClass] = [:]
     
-    public init(@ComposeLayoutBuilder layout: @escaping (_ environment: NSCollectionLayoutEnvironment) -> ComposeLayoutModel) {
+    public init(@ComposeLayoutBuilder layout: @escaping (_ sectionIndex: Int, _ environment: NSCollectionLayoutEnvironment) -> ComposeLayoutModel) {
         self.layoutBuilder = layout
     }
         
@@ -24,7 +24,7 @@ public struct ComposeLayout {
 
 // MARK: - Update Layout
 extension ComposeLayout {
-    public func configuration(_ configuration: PlatformCompositionalLayoutConfiguration) -> ComposeLayout {
+    public func using(configuration: PlatformCompositionalLayoutConfiguration) -> ComposeLayout {
         return mutable(self) { $0.configuration = configuration }
     }
 }
@@ -32,14 +32,13 @@ extension ComposeLayout {
 // MARK: - Build Layout
 extension ComposeLayout {
     public func build() -> PlatformCompositionalLayout {
-        let layout = PlatformCompositionalLayout { index, environment in
-            let composeLayoutModel = layoutBuilder(environment)
-            return if index < composeLayoutModel.sections.count {
-                composeLayoutModel.sections[index].toNSCollectionLayoutSection()
+        let layout = PlatformCompositionalLayout { sectionIndex, environment in
+            let composeLayoutModel = layoutBuilder(sectionIndex, environment)
+            return if sectionIndex < composeLayoutModel.sections.count {
+                composeLayoutModel.sections[sectionIndex].toNSCollectionLayoutSection()
             } else {
                 composeLayoutModel.sections.last?.toNSCollectionLayoutSection()
             }
-                
         }
 
         decorationViewClasses.forEach { (key: String, value: AnyClass) in
@@ -49,3 +48,14 @@ extension ComposeLayout {
         return layout
     }
 }
+
+// MARK: - Support List
+#if !os(macOS)
+extension ComposeLayout {
+    @available(iOS 14.0, *)
+    public static func list(using configuration: UICollectionLayoutListConfiguration) -> PlatformCompositionalLayout {
+        return PlatformCompositionalLayout.list(using: configuration)
+    }
+}
+#endif
+

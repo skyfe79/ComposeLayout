@@ -2,7 +2,7 @@
 //  ItemBadgeSupplementaryViewController.swift
 //  CocoaExample
 //
-//  Created by codingmax on 2024/02/01.
+//  Created by Sungcheol Kim on 2024/02/01.
 //
 
 import Cocoa
@@ -49,8 +49,8 @@ class ItemBadgeSupplementaryViewController: NSViewController, NSWindowDelegate {
 
 extension ItemBadgeSupplementaryViewController {
     private func createLayout() -> NSCollectionViewLayout {
-        ComposeLayout { environment in
-            Section(id: Sections.main) {
+        ComposeLayout { sectionIndex, environment in
+            Section {
                 HGroup {
                     Item(width: .fractionalWidth(0.25), height: .fractionalHeight(1.0))
                         .contentInsets(leading: 5, top: 5, trailing: 5, bottom: 5)

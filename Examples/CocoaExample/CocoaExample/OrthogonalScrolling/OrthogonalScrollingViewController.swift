@@ -2,7 +2,7 @@
 //  OrthogonalScrollingViewController.swift
 //  CocoaExample
 //
-//  Created by codingmax on 2024/02/01.
+//  Created by Sungcheol Kim on 2024/02/01.
 //
 
 import Cocoa
@@ -30,8 +30,8 @@ extension OrthogonalScrollingViewController {
         let config = NSCollectionViewCompositionalLayoutConfiguration()
         config.scrollDirection = .vertical
         
-        return ComposeLayout { environment in
-            Section(id: Sections.first) {
+        return ComposeLayout { sectionIndex, environment in
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.7))
@@ -53,7 +53,7 @@ extension OrthogonalScrollingViewController {
             }
             .orthogonalScrollingBehavior(.continuous)
             
-            Section(id: Sections.second) {
+            Section {
                 HGroup {
                     Item()
                         .width(.fractionalWidth(0.7))
@@ -73,7 +73,7 @@ extension OrthogonalScrollingViewController {
                 .height(.fractionalHeight(0.5))
             }
         }
-        .configuration(config)
+        .using(configuration: config)
         .build()
     }
 }

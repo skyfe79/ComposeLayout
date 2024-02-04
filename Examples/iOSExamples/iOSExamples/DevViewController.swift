@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DevViewController.swift
 //  iOSExamples
 //
 //  Created by Sungcheol Kim on 2024/01/31.
@@ -57,7 +57,7 @@ class MyBackgroundView3: UICollectionReusableView {
 }
 
 
-class ViewController: UIViewController {
+class DevViewController: UIViewController {
 //    lazy var myLayout = {
 //        ComposeLayout { environment in
 //            Section(id: UUID()) {
@@ -110,7 +110,7 @@ class ViewController: UIViewController {
 //    }()
     
     func testSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
     }
     
     func firstSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
     }
     
     func secondSection(environment: NSCollectionLayoutEnvironment) -> Section {
-        Section(id: UUID()) {
+        Section {
             HGroup {
                 Item()
                     .width(.fractionalWidth(0.5))
@@ -193,7 +193,7 @@ class ViewController: UIViewController {
     }
     
     lazy var layout:UICollectionViewCompositionalLayout = {
-        ComposeLayout { environment in
+        ComposeLayout { index, environment in
             self.testSection(environment: environment)
             self.firstSection(environment: environment)
             self.secondSection(environment: environment)
@@ -225,7 +225,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension DevViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 3
     }
