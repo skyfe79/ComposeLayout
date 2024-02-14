@@ -12,15 +12,38 @@ ComposeLayout only support Swift Package Manager
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/skyfe79/ComposeLayout.git", from: "1.0.0"),
+    .package(url: "https://github.com/skyfe79/ComposeLayout.git", from: "0.0.1"),
 ]
 ```
 
 ## [Examples](https://github.com/skyfe79/ComposeLayout/tree/main/Examples)
 
-Using ComposeLayout makes writing complex Compositional Layouts intuitive and easy, allowing for straightforward composition of layouts. When developing iOS apps with UIKit's UICollectionView, ComposeLayout can greatly simplify the process of expressing and managing the layouts of CollectionViews.
+Using ComposeLayout makes writing complex Compositional Layouts intuitive and easy, allowing for straightforward composition of layouts. When developing iOS apps with UIKit's UICollectionView, ComposeLayout can greatly simplify the process of expressing and managing the layouts of CollectionViews. Below is an example code of Compositional Layout representing a 2-column grid.
+
+```swift
+ComposeLayout { index, environment in
+    Section {
+        HGroup(repeatItems: 2) {
+            Item()
+                .width(.fractionalWidth(1.0))
+                .height(.fractionalHeight(1.0))
+        }
+        .interItemSpacing(.fixed(10))
+        .width(.fractionalWidth(1.0))
+        .height(.absolute(44))
+    }
+    .interGroupSpacing(10)
+    .contentInsets(leading: 10, top: 0, trailing: 10, bottom: 0)
+}
+.build()
+```
 
 The [Example folder](https://github.com/skyfe79/ComposeLayout/tree/main/Examples) in this repository contains sample codes that have been rewritten using ComposeLayout for both iOS and MacOS. These examples are based on the [Modern Collection Views](https://developer.apple.com/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views) officially distributed by Apple.
+
+## TODO
+
+- [ ] documents
+
 
 ## MIT License
 
