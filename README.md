@@ -12,7 +12,7 @@ ComposeLayout only support Swift Package Manager
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/skyfe79/ComposeLayout.git", from: "0.0.1"),
+    .package(url: "https://github.com/skyfe79/ComposeLayout.git", from: "0.0.2"),
 ]
 ```
 
@@ -39,10 +39,6 @@ ComposeLayout { index, environment in
 ```
 
 The [Example folder](https://github.com/skyfe79/ComposeLayout/tree/main/Examples) in this repository contains sample codes that have been rewritten using ComposeLayout for both iOS and MacOS. These examples are based on the [Modern Collection Views](https://developer.apple.com/documentation/uikit/views_and_controls/collection_views/implementing_modern_collection_views) officially distributed by Apple.
-
-## TODO
-
-- [ ] documents
 
 
 ## MIT License
