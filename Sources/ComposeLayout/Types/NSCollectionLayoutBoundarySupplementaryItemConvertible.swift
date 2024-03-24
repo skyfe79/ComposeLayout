@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  NSCollectionLayoutBoundarySupplementaryItemConvertible.swift
+//
 //
 //  Created by Sungcheol Kim on 2024/01/31.
 //
@@ -8,11 +8,14 @@
 import Foundation
 
 #if os(iOS)
-import UIKit
+  import UIKit
 #else
-import AppKit
+  import AppKit
 #endif
 
+/// A protocol that enables the conversion to `NSCollectionLayoutBoundarySupplementaryItem`.
 public protocol NSCollectionLayoutBoundarySupplementaryItemConvertible {
-    func toNSCollectionLayoutBoundarySupplementaryItem() -> NSCollectionLayoutBoundarySupplementaryItem
+  /// Converts the conforming type to an instance of `NSCollectionLayoutBoundarySupplementaryItem`.
+  /// - Returns: An `NSCollectionLayoutBoundarySupplementaryItem` instance.
+  func toNSCollectionLayoutBoundarySupplementaryItem() -> NSCollectionLayoutBoundarySupplementaryItem
 }
